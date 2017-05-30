@@ -17,8 +17,8 @@
       <file leaf-file-name="WriterJsonObject.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/WriterJsonObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            <state relative-caret-position="367">
+              <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,9 +105,9 @@
         <option value="$PROJECT_DIR$/src/main/java/HandleObject.java" />
         <option value="$PROJECT_DIR$/src/main/resources/JSONwrite.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/WriterJsonObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/Collection_to_Json.java" />
         <option value="$PROJECT_DIR$/src/main/java/Json_to_Object.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WriterJsonObject.java" />
       </list>
     </option>
   </component>
@@ -729,12 +729,12 @@
       <workItem from="1496028191884" duration="22366000" />
       <workItem from="1496109232646" duration="3753000" />
       <workItem from="1496113798083" duration="2045000" />
-      <workItem from="1496116409934" duration="290000" />
+      <workItem from="1496116409934" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28454000" />
+    <option name="totallyTimeSpent" value="28558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1030,8 +1030,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/json.php" />
     <entry file="file://$PROJECT_DIR$/src/main/java/WriterJsonObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        <state relative-caret-position="367">
+          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
