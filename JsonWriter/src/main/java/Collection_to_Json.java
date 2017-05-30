@@ -38,15 +38,24 @@ public class Collection_to_Json {
             this.address = address;
         }
 
-        public Date getDOB(){
-            return dateOfBirth;
-        }
+        public Date getDateOfBirth(){return dateOfBirth;}
 
         public void setDateOfBirth(Date dateOfBirth){
             this.dateOfBirth = dateOfBirth;
         }
 
     }
+    private static Date getDOB(int year, int month, int date) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.MONTH, month - 1);
+        calendar.set(Calendar.DATE, date);
+        calendar.set(Calendar.HOUR, 0);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        return calendar.getTime();
+    }
+
 
     public static void main(String[] args) {
         // Converts a collection of string object into JSON string.
@@ -85,15 +94,5 @@ public class Collection_to_Json {
         }
     }
 
-    private static Date getDOB(int year, int month, int date) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, month - 1);
-        calendar.set(Calendar.DATE, date);
-        calendar.set(Calendar.HOUR, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        return calendar.getTime();
-    }
 
 }
