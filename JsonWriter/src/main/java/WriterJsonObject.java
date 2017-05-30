@@ -27,7 +27,7 @@ public class WriterJsonObject {
 
         try {
             //path create file
-            //String path = "D:\\Document\\JsonWriter\\src\\main\\resources\\JSONwrite.json" ;
+            String path = "D:\\Document\\JsonWriter\\src\\main\\resources\\JSONwrite.json" ;
             ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(path));
 
             //add daysJson
