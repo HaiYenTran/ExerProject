@@ -1,0 +1,53 @@
+=======================Guide to configure Standalone GUI=====================
+1. Install needed plugins
++ groovy 1.3
++ simple theme plugins
++ jQuery plugins
++ Dynamic Parameter
++ Email-ext plugin
++ Ansi color
+-> After installed go to Manager Jenkins -> Configure Global Security -> Find "Markup Formatter" -> change to "Safe HTML" -> Save to active it
+
+2. In Jenkins home
+- mkdir <Jenkins home>/userContent/style/
+- Copy standalone_gui.js and style.css to  <Jenkins home>/userContent/style/
+
+3. In global config
+At "URL of theme JS": Enter the path of js script: https://fem028-eiffel021.rnd.ki.sw.ericsson.se:8443/jenkins/userContent/style/standalone_gui.js
+At "URL of theme CSS": Enter the path of css: https://fem028-eiffel021.rnd.ki.sw.ericsson.se:8443/jenkins/userContent/style/style.css
+
+4. Deploy job VISE0203 and clone for other VISEs
+
+5. How to configure email notification
+
+**In Global Configuration:
+Jenkins Location:
+- Change System Admin e-mail address: ie Standalone GUI Fem036<noreply@fem036>
+
+Extended E-mail Notification
+- Change Default Subject
+Example: STANDALONE GUI FEM036: $PROJECT_NAME - Build #$BUILD_NUMBER - $BUILD_STATUS!
+
+- Change Default Content:
+Example:
+    Hi,
+
+    This is no-reply email from Standalone GUI Jenkins:
+
+    Project Name: $PROJECT_NAME 
+    Build: #$BUILD_NUMBER
+    Build Status: $BUILD_STATUS
+    Console Output: $BUILD_URLconsoleFull
+
+    Regards,
+** In Job Configuration:
+- Add Post-build Actions: Editable Email Notification 
+    + Project Recipient List: Add email here or get env vars
+    + Content Type: Use default content type or custom
+    + Default Subject: Use $DEFAULT_SUBJECT if you want to use same as you configured in global configuration above.
+    + Default Content: Use $DEFAULT_CONTENT if you want to use same as you configured in global configuration above.
+
+- Click Advance Settings:
+    + Triggers: Always
+        Send To: Recipient list: Means email will be sent to the entered emails
+        Send To: Requestor: Means email will be sent to person who buid the project

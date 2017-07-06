@@ -1,0 +1,46 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+title ILES CI general flow
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+actor "IMS node" as tester
+participant "ILES CI Engine" as cie
+
+box "CI\nDB" #LightGrey
+    participant assignments
+end box
+
+	tester -> cie : ITR
+	cie -> cie : validate input
+	alt if there is no channel available
+		cie -> cie : queue the request
+	else else
+		alt if job is allowed to run in parallel with current jobs
+			cie -> cie: perform installation/cfg/prov/test
+			cie -> cie : upload logs&traces
+			cie -> cie : report in Leo
+		end
+	end
+	cie -> tester : BTF
+	cie -> cie : ...
+@enduml

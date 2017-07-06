@@ -1,0 +1,19 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+	
+    <f:entry title="${it.name}">
+            <f:textbox name="job" value="${it.location}" readonly="true" />
+            <f:textbox name="job" value="${it.job}" readonly="true" />
+             <f:textbox name="job" value="${it.unitRequest}" readonly="true" />
+             <f:textbox name="job" value="${it.unitResponse}" readonly="true" />
+    </f:entry>
+
+    <f:entry title="${it.name}">
+        <j:forEach var="entry" items="${it.units.entrySet()}">
+            <f:textbox name="job" value="${entry.getValue()}" readonly="true" />
+        </j:forEach>
+    </f:entry>
+</j:jelly>

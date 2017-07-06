@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.ericsson.branding.EricssonBrandingDecorator plugin="ericsson-branding@1.02">
+  <useEricssonBrandingSymbols>false</useEricssonBrandingSymbols>
+  <useBannerSymbol>false</useBannerSymbol>
+  <bannerHeadingText></bannerHeadingText>
+</com.ericsson.branding.EricssonBrandingDecorator>

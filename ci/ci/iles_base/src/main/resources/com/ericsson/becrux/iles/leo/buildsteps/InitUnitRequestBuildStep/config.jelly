@@ -1,0 +1,30 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="Identify Name" >
+        <f:textbox field="identifyName" />
+    </f:entry>
+
+    <f:entry title="Label" >
+        <f:textbox field="label" />
+    </f:entry>
+
+    <f:entry field="unitType" title="Choose Unit Type">
+       <f:select />
+    </f:entry>
+
+    <f:entry field="statusType" title="Choose Status Type">
+       <f:select />
+    </f:entry>
+
+    <f:entry title="Set Start Time" >
+        <f:checkbox field="setStartTime" />
+    </f:entry>
+
+    <f:entry title="Set Stop Time" >
+        <f:checkbox field="setStopTime" />
+    </f:entry>
+</j:jelly>

@@ -1,0 +1,16 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="Netconf">
+	    <f:checkbox field="netconf" />
+	</f:entry>
+	<f:entry title="SSL file">
+	    <f:textbox field="sslFile" />
+	</f:entry>
+    <f:entry title="Additional Arguments" description="Enter additional arguments.">
+	    <f:textbox field="additionalArgs" />
+	</f:entry>
+</j:jelly>

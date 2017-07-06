@@ -1,0 +1,31 @@
+@startuml
+node ILES_FEM {
+  artifact ILES_CI_jenkins
+}
+
+node INT_FEM {
+  artifact INT_CI_jenkins
+}
+
+
+cloud VISE_channel {
+  cloud INT_CI_pool {
+  	artifact vise105
+  	artifact vise106
+  	artifact vise107
+  	artifact vise108
+  	artifact vise109
+  	artifact vise110
+  }
+
+  cloud ILES_CI_pool {
+  	artifact vise104
+  	artifact vise103
+  }
+
+}
+
+INT_CI_jenkins --> INT_CI_pool
+ILES_CI_jenkins --> ILES_CI_pool
+
+@enduml

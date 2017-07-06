@@ -1,0 +1,561 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="4" skipped="12" tests="137" time="6502.73781494">
+	<testsuite errors="0" failures="0" hostname="esekiws6014.rnd.ki.sw.ericsson.se" name="BATS_INSTALL_3PPS" skipped="0" tests="1" time="20.67" timestamp="2016-02-03T12:10:58">
+		<testcase classname="BATS_INSTALL_3PPS" name="3pp/openssl" time="20.67"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5332.rnd.ki.sw.ericsson.se" name="BATS_INSTALL_CBA" skipped="4" tests="31" time="640.46" timestamp="2016-02-03T12:21:17">
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ait" time="8.8725"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/brfc" time="8.8725"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/brf-eia" time="8.8725"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/comsa" time="8.8725"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/dbs" time="8.8725">
+			<skipped>
+
+
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/evip" time="8.8725"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/lem" time="8.8725">
+			<skipped>
+
+
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/vdicosee" time="8.8725">
+			<skipped>
+
+
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/cdiameter-runtime" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/cdiameter-lib" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/cmw" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/com" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/javaoam" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/isp-c" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ispsa" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/lm" time="24.76">
+			<skipped>
+
+
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/lm-license-server" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/lm-sentinel-cloud" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/lmsa" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/trace_cc" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/trace_ea" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ldews" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ldews-brf" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ldews-brf-script" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ldews-heo" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ldews-deo" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/sec-cert" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/sec-crypto" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/sec-la" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/sec-acs" time="24.76"/>
+		<testcase classname="BATS_INSTALL_CBA" name="cba/ss7-caf" time="24.76"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5503.rnd.ki.sw.ericsson.se" name="BATS_INSTALL_RELEASES" skipped="0" tests="6" time="226.36" timestamp="2016-02-03T12:14:23">
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-aaa-fw" time="37.7266666667"/>
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-ctl" time="37.7266666667"/>
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-regex" time="37.7266666667"/>
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-utils" time="37.7266666667"/>
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-ims-fw" time="37.7266666667"/>
+		<testcase classname="BATS_INSTALL_RELEASES" name="release/cmco-li" time="37.7266666667"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5274.rnd.ki.sw.ericsson.se" name="BATS_INSTALL_TOOLS" skipped="1" tests="10" time="1679.87" timestamp="2016-02-03T12:38:37">
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/cde" time="327.636">
+			<skipped>
+
+ (Not yet implemented)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/cdf" time="327.636"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/jdk" time="327.636"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/jenkins" time="327.636"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/eecs" time="327.636"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/bridgepoint" time="8.338"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/astyle" time="8.338"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/bison" time="8.338"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/flex" time="8.338"/>
+		<testcase classname="BATS_INSTALL_TOOLS" name="tools/pcre" time="8.338"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5505.rnd.ki.sw.ericsson.se" name="BATS_REPO_CMDS" skipped="7" tests="7" time="0.53" timestamp="2016-02-03T12:11:01">
+		<testcase classname="BATS_REPO_CMDS" name="mkrepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="rmrepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="addrepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="cacherepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="hiderepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="lsrepo" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+		<testcase classname="BATS_REPO_CMDS" name="mkdb" time="0.0757142857143">
+			<skipped>
+
+ (NYI)
+
+</skipped>
+		</testcase>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws6009.rnd.ki.sw.ericsson.se" name="BATS_INTERNAL_CMDS" skipped="0" tests="12" time="14.23" timestamp="2016-02-03T12:10:52">
+		<testcase classname="BATS_INTERNAL_CMDS" name="only_rt" time="1.096"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="rt_and_pl" time="1.096"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="odd_target_location" time="1.096"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="only_rt_bad_artifact_name" time="1.096"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="rt_and_pl_bad_artifact_name" time="1.096"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="basic" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="product" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="version" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="type" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="number" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="rstate" time="1.25"/>
+		<testcase classname="BATS_INTERNAL_CMDS" name="json" time="1.25"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5352.rnd.ki.sw.ericsson.se" name="BATS_PATH_CMD" skipped="0" tests="7" time="12.21" timestamp="2016-02-03T12:10:50">
+		<testcase classname="BATS_PATH_CMD" name="path/append" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/prepend" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/remove" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/clean" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/translate" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/list" time="1.74428571429"/>
+		<testcase classname="BATS_PATH_CMD" name="path/usage" time="1.74428571429"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="BATS_WHICH_CMD" skipped="0" tests="2" time="1.54" timestamp="2016-02-03T12:10:39">
+		<testcase classname="BATS_WHICH_CMD" name="which/positive" time="0.77"/>
+		<testcase classname="BATS_WHICH_CMD" name="which/negative" time="0.77"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5505.rnd.ki.sw.ericsson.se" name="BATS_BUILD_CMD" skipped="0" tests="4" time="14.4" timestamp="2016-02-03T12:10:52">
+		<testcase classname="BATS_BUILD_CMD" name="build/fail" time="3.6"/>
+		<testcase classname="BATS_BUILD_CMD" name="build/minimal" time="3.6"/>
+		<testcase classname="BATS_BUILD_CMD" name="build/debug_verbose" time="3.6"/>
+		<testcase classname="BATS_BUILD_CMD" name="build/loops" time="3.6"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330" name="PYEXEC_JUNIT" skipped="0" tests="5" time="0.721545219421">
+		<testcase classname="test_junit.TestJunit" name="test_create_with_valid_xml" time="0.336570978165"/>
+		<testcase classname="test_junit.TestJunit" name="test_create_with_no_such_file" time="0.00760102272034"/>
+		<testcase classname="test_junit.TestJunit" name="test_create_with_invalid_xml" time="0.000643014907837"/>
+		<testcase classname="test_junit.TestJunit" name="test_read_values_from_valid_xml" time="0.00449919700623"/>
+		<testcase classname="test_junit.TestJunit" name="test_write_values_from_valid_xml" time="0.372231006622"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws6012" name="PYEXEC_LYNX_CI_CT" skipped="0" tests="3" time="0.203269720077">
+		<testcase classname="test_config" name="test_read_xml" time="0.194361925125"/>
+		<testcase classname="test_config" name="test_read_ini" time="0.00649785995483"/>
+		<testcase classname="test_config" name="test_read_config" time="0.00240993499756"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5511.rnd.ki.sw.ericsson.se" name="BATSEXEC_BATS_BASIC" skipped="0" tests="3" time="0.81" timestamp="2016-02-03T12:10:38">
+		<testcase classname="BATSEXEC_BATS_BASIC" name="addition_using_bc" time="0.27"/>
+		<testcase classname="BATSEXEC_BATS_BASIC" name="addition_using_dc" time="0.27"/>
+		<testcase classname="BATSEXEC_BATS_BASIC" name="new_test_addition_using_dc" time="0.27"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5335.rnd.ki.sw.ericsson.se" name="BATSEXEC_BATS_EXT" skipped="0" tests="4" time="1.21" timestamp="2016-02-03T12:10:38">
+		<testcase classname="BATSEXEC_BATS_EXT" name="how_to_test_with_pipe" time="0.3025"/>
+		<testcase classname="BATSEXEC_BATS_EXT" name="here_we_want_to_pass_when_command_is_not_found" time="0.3025"/>
+		<testcase classname="BATSEXEC_BATS_EXT" name="check_that_the_man_page_for_bats_1_exist" time="0.3025"/>
+		<testcase classname="BATSEXEC_BATS_EXT" name="check_that_the_man_page_for_bats_7_exist" time="0.3025"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5502" name="PYEXEC_Erlang_asn" skipped="0" tests="2" time="200.259791136">
+		<testcase classname="asn_test.ASN_test" name="test_norebuild_asn1" time="74.1213841438"/>
+		<testcase classname="asn_test.ASN_test" name="test_norebuild_asnset" time="126.138406992"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5472" name="PYEXEC_Erlang_build" skipped="0" tests="13" time="998.00881362">
+		<testcase classname="build_test.BuildTest" name="test_app_build" time="86.6880471706"/>
+		<testcase classname="build_test.BuildTest" name="test_asn1_build" time="102.678249121"/>
+		<testcase classname="build_test.BuildTest" name="test_asnset_build" time="82.1305680275"/>
+		<testcase classname="build_test.BuildTest" name="test_dia_build" time="75.8199369907"/>
+		<testcase classname="build_test.BuildTest" name="test_eaunit_build" time="66.2816059589"/>
+		<testcase classname="build_test.BuildTest" name="test_edoc_build" time="85.091864109"/>
+		<testcase classname="build_test.BuildTest" name="test_erl_build" time="80.4359629154"/>
+		<testcase classname="build_test.BuildTest" name="test_includesu_build" time="79.2635061741"/>
+		<testcase classname="build_test.BuildTest" name="test_mib_build" time="73.0076320171"/>
+		<testcase classname="build_test.BuildTest" name="test_netconf_build" time="72.2368001938"/>
+		<testcase classname="build_test.BuildTest" name="test_priv_build" time="63.0541119576"/>
+		<testcase classname="build_test.BuildTest" name="test_suunit_build" time="62.1709420681"/>
+		<testcase classname="build_test.BuildTest" name="test_yrl_build" time="69.149586916"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5510" name="PYEXEC_Erlang_cdfflag" skipped="0" tests="2" time="272.248315096">
+		<testcase classname="cdfflag_test.CdfFlagsTest" name="test_flagbc_build" time="142.753761053"/>
+		<testcase classname="cdfflag_test.CdfFlagsTest" name="test_flagf_build" time="129.494554043"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5511" name="PYEXEC_Erlang_cdfgenerate" skipped="0" tests="1" time="8.8366549015">
+		<testcase classname="cdfgenerate_test.CdfGenerateTest" name="test_generate_build" time="8.8366549015"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws6009" name="PYEXEC_Erlang_ctbuild" skipped="0" tests="2" time="308.960432053">
+		<testcase classname="ctbuild_test.CTBuildTest" name="test_ct_only_build" time="228.878381014"/>
+		<testcase classname="ctbuild_test.CTBuildTest" name="test_ctunit_build" time="80.0820510387"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5500" name="PYEXEC_Erlang_debuginfo" skipped="0" tests="2" time="186.566931725">
+		<testcase classname="debuginfo_test.DebugInfoTest" name="test_debuginfo_build" time="86.0734639168"/>
+		<testcase classname="debuginfo_test.DebugInfoTest" name="test_encryptdebuginfo_build" time="100.493467808"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5263" name="PYEXEC_Erlang_define" skipped="0" tests="3" time="125.889057875">
+		<testcase classname="define_test.ErlangUnitTest" name="test_define_addition" time="33.3100399971"/>
+		<testcase classname="define_test.ErlangUnitTest" name="test_define_over_ride" time="42.2678399086"/>
+		<testcase classname="define_test.ErlangUnitTest" name="test_undefine" time="50.311177969">
+			<system-out>Loading plugins...
+Looking for Python modules in BP/LYNX_NSTA (/vobs/ims/cde/src/lynx-nsta/TDP_LYNX_NSTA/NSTA_BP)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-nsta/TDP_LYNX_NSTA/NSTA_BP/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-nsta/TDP_LYNX_NSTA/NSTA_BP/lib/python2.7/nsta4_executor.py is a plugin
+Looking for Python modules in BP/LYNX_JPT (/vobs/ims/cde/src/lynx-jpt/TDP_LYNX_JPT/BP_JPT)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-jpt/TDP_LYNX_JPT/BP_JPT/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/cde/src/lynx-erlang/TDP_LYNX_ERLANG/BP_Erlang/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-jpt/TDP_LYNX_JPT/BP_JPT/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/CoreMW (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7/cmwbuild_plugin.py is a plugin
+Looking for Python modules in BP/LYNX_UTILS (/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7
+  file /vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_TTCN (/vobs/ims/cde/src/lynx-ttcn/TDP_LYNX_TTCN/BP_TTCN)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-ttcn/TDP_LYNX_TTCN/BP_TTCN/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-ttcn/TDP_LYNX_TTCN/BP_TTCN/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_ERLANG (/vobs/ims/cde/src/lynx-erlang/TDP_LYNX_ERLANG/BP_Erlang)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-erlang/TDP_LYNX_ERLANG/BP_Erlang/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7
+  file /vobs/ims/cde/src/lynx-erlang/TDP_LYNX_ERLANG/BP_Erlang/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/CSM (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CSM_DE-CXP9050102-R6A03/contained/BP_CSM)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CSM_DE-CXP9050102-R6A03/contained/BP_CSM/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CSM_DE-CXP9050102-R6A03/contained/BP_CSM/lib/python2.7/csmbuild_plugin.py is a plugin
+Looking for Python modules in BP/GENTS (/vobs/ims/cde/src/lynx-gents/TDP_LYNX_GENTS/GENTS_BP)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-gents/TDP_LYNX_GENTS/GENTS_BP/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/cde/src/lynx-gents/TDP_LYNX_GENTS/GENTS_BP/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/Java (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfJava-CXP9050080-R6A03/contained/BP_Java)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfJava-CXP9050080-R6A03/contained/BP_Java/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfJava-CXP9050080-R6A03/contained/BP_Java/lib/python2.7/javabuild_plugin.py is a plugin
+Looking for Python modules in BP/LYNX_CI (/vobs/ims/cde/src/lynx-ci/TDP_LYNX_CI/BP_CI)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-ci/TDP_LYNX_CI/BP_CI/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/cde/src/lynx-ci/TDP_LYNX_CI/BP_CI/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/Thrift (/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-ThriftTools-CXP9030926-R9A10/contained/TDP-ThriftTools-CXP9040403-R9A10/contained/BP_Thrift)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-ThriftTools-CXP9030926-R9A10/contained/TDP-ThriftTools-CXP9040403-R9A10/contained/BP_Thrift/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-ThriftTools-CXP9030926-R9A10/contained/TDP-ThriftTools-CXP9040403-R9A10/contained/BP_Thrift/lib/python2.7/thrift_plugin.py is a plugin
+Looking for Python modules in BP/LYNX_BATS (/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Bats)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Bats/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7
+  file /vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Bats/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_DEPLOY (/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_DEPLOY)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_DEPLOY/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7
+  file /vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_DEPLOY/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_SCRIPT (/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Script)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Script/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCoreMW-CXP9050077-R6A03/contained/BP_CoreMW/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7
+  file /vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Script/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_PYTEST (/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Pytest)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Pytest/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7
+  file /vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Pytest/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/CommonCPP (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7/commoncpp_plugin.py is a plugin
+Looking for Python modules in BP/CdfBuild (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7/cdfbuild_plugin.py is a plugin
+Looking for Python modules in BP/CODECHECKER (/vobs/ims/cde/src/lynx-ca/TDP_LYNX_CA/BP_CODECHECKER)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-ca/TDP_LYNX_CA/BP_CODECHECKER/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-ca/TDP_LYNX_CA/BP_CODECHECKER/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_TEST (/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7/plugin.py is a plugin
+Looking for Python modules in BP/LYNX_VDCTF (/vobs/ims/cde/src/lynx-vdctf/TDP_LYNX_VDCTF/BP_VDCTF)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/cde/src/lynx-vdctf/TDP_LYNX_VDCTF/BP_VDCTF/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7:/vobs/ims/cde/src/lynx-utils/TDP_LYNX_UTILS/BP_Utils/lib/python2.7:/vobs/ims/cde/src/lynx-test/TDP_LYNX_TEST/BP_TEST/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7
+  file /vobs/ims/cde/src/lynx-vdctf/TDP_LYNX_VDCTF/BP_VDCTF/lib/python2.7/vdctf_plugin.py is a plugin
+Looking for Python modules in BP/vDicos (/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfVDicos-CXP9050079-R6A03/contained/BP_vDicos)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfVDicos-CXP9050079-R6A03/contained/BP_vDicos/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfVDicos-CXP9050079-R6A03/contained/BP_vDicos/lib/python2.7/vdicos_build.py is a plugin
+Looking for Python modules in BP/CDL (/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/BP_CDL)
+  Python path=:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Cdf-CXP9050064-R6A03/contained/DT_Cdf/lib/python2.7:/vobs/ims/repository/ucm/elibs/dist/unitprep/elibs/contained/erlport/erlport-0.9.8/priv/python2:/vobs/ims/repository/ucm/lem/dist/unitprep/rt/contained/PSR-CDSv-CXP9030880-R9A10/contained/TDP-CdsvTools-CXP9040361-R9A10/contained/DT_CommonLEMPlugins/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_RtidClient/lib/python2.7:/vobs/ims/repository/ucm/plibs/dist/unitprep/plibs/DT/lib/python2.7:/vobs/ims/repository/ucm/vdicos/dist/unitprep/sdk/contained/PSR-vDicos_DL-CXP9030896-R10A10/contained/TDP-DevTools-CXP9040381-R10A10/contained/DT_Ctf/lib/python2.7:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/DT_CDL/lib/python2.7:/vobs/ims/cde/src/corvus/TDP_CORVUS/DT_CORVUS/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_JOBASSISTANT/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_LIBRA/lib/python2.7:/vobs/ims/cde/src/aquarius/TDP_AQUARIUS/DT_DEPTREE/lib/python2.7:/vobs/ims/cde/src/scorpius/TDP_SCORPIUS/DT_SCORPIUS/lib/python2.7:/vobs/ims/cde/ft/CDE_TEST_DT/lib/python2.7:/vobs/ims/cde/src/eunomia/TDP_EUNOMIA/DT_EUNOMIA/lib/python2.7:/vobs/ims/cde/tools/cde-config/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_GRAPHGEN/lib/python2.7:/vobs/ims/cde/src/cde/POST_TOOL_GALAXY/lib/python2.7:/vobs/ims/cde/src/libra/TDP_LIBRA/DT_CDF_PROFILER/lib/python2.7:/vobs/ims/cde/src/draco/TDP_DRACO/DT_DRACO/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python27.zip:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/plat-linux2:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-tk:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-old:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/lib-dynload:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-Python-CXS1040058-R6A03/contained/DT_Python/lib/python2.7/site-packages:/vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/BP_CDL/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfCommon-CXP9050073-R6A03/contained/BP_CommonCPP/lib/python2.7:/vobs/ims/repository/ucm/cdf/dist/sdk/unitprep/TDP-CdfBuild-CXP9050069-R6A03/contained/BP_CdfBuild/lib/python2.7
+  file /vobs/ims/repository/ucm/lem/dist/unitprep/dt/contained/PSR-CDLTools-CXP9031602-R9A10/contained/TDP-CDLTools-CXP9040402-R9A10/contained/BP_CDL/lib/python2.7/cdl_plugin.py is a plugin
+Initializing the Script build plugin
+Initializing the CSM build plugin
+Initializing the Common C++ build plugin
+Initializing the Erlang build plugin
+Initializing the CoreMW build plugin
+Initializing the JPT plugin
+Initializing the CODECHECKER plugin
+Initializing the TTCN3 build &amp; execution plugin
+Initializing the vDicos build plugin
+Initializing the NSTA4 execution plugin
+Initializing the Java build plugin
+Initializing the TEST Build Plugin
+Initializing the CDF build plugin
+Initializing the CDL build plugin
+Initializing the System Under Test Deployment build plugin
+Initializing the GenTS plugin
+Initializing Package Builders (JDIP, RTDP, RTDF)
+Initializing the VDCTF plugin
+Initializing the CDL build plugin
+Starting the build...
+Removing /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/spec_gen (force=True, recursive=True, shellPattern=False)
+Removing /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/ebin (force=True, recursive=True, shellPattern=False)
+Removing /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/edoc (force=True, recursive=True, shellPattern=False)
+Creating directory /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/ebin
+erlc -o /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/ebin -DONE=1 -I /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/include -I /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/spec_gen/include +encrypt_debug_info /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/src/use_define.erl
+/vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/src/use_define.erl:3: function one/0 undefined
+/vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/define_EA/src/use_define.erl:3: function two/0 undefined
+Process finished
+Build FAILED
+The build took 35.78 real seconds
+The build system used 2.08 (73.50%) user/4.02 (90.74%) system CPU seconds
+The child processes used 0.75 (26.50%) user/0.41 (9.26%) system CPU seconds
+The build altogether used 2.83 user/4.43 system CPU seconds
+0.20 CPUs were fully utilized
+</system-out>
+		</testcase>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5484" name="PYEXEC_Erlang_dialyzer" skipped="0" tests="4" time="472.503559112">
+		<testcase classname="dialyzer_test.DialyzerTest" name="test_dialyze_build" time="84.961140871"/>
+		<testcase classname="dialyzer_test.DialyzerTest" name="test_dialyze_plts_build" time="212.893686056">
+			<system-out>[0006]: dialyzer
+[0006]:   Creating PLT /tmp/tmpDiJjBU/usedunit.plt ...
+[0006]: Unknown functions:
+[0006]:   erlang:get_module_info/1
+[0006]:   erlang:get_module_info/2
+[0006]:  done in 0m0.69s
+[0006]: done (passed successfully)
+[0007]: Building of unit usedunit is successful.
+Build successful
+The build took 23.39 real seconds
+The build system used 1.82 (64.08%) user/3.90 (82.28%) system CPU seconds
+The child processes used 1.02 (35.92%) user/0.84 (17.72%) system CPU seconds
+The build altogether used 2.84 user/4.74 system CPU seconds
+0.32 CPUs were fully utilized
+</system-out>
+		</testcase>
+		<testcase classname="dialyzer_test.DialyzerTest" name="test_plt_build" time="98.4689850807"/>
+		<testcase classname="dialyzer_test.DialyzerTest" name="test_plt_output_build" time="76.1797471046"/>
+	</testsuite>
+	<testsuite errors="0" failures="1" hostname="esekiws5506" name="PYEXEC_Erlang_ea" skipped="0" tests="1" time="38.4232361317">
+		<testcase classname="ea_test.EaTest" name="test_ea_rebuild" time="38.4232361317">
+			<failure message="test failure">self = &lt;ea_test.EaTest testMethod=test_ea_rebuild&gt;
+
+    def test_ea_rebuild(self):
+&gt;       self.do_two_builds_of_one_unit(&quot;eaunit&quot;)
+
+ea_test.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;ea_test.EaTest testMethod=test_ea_rebuild&gt;, unitname = 'eaunit'
+
+    def do_two_builds_of_one_unit(self, unitname):
+        c = Cdf(unitname)
+        c.buildUnit(flags=[&quot;-r&quot;, &quot;-j&quot;, &quot;8&quot;])
+&gt;       self.assertTrue(c.isBuildSuccessful())
+E       AssertionError: False is not true
+
+ea_test.py:18: AssertionError</failure>
+			<system-out>[0005]: erlc eaunit/spec/1/f.erl
+[0007]: erlc eaunit/spec/2/MINIMAL.mib
+[0008]: erlc
+[0010]: erlc eaunit/spec/3/grammar.yrl
+[0011]: erlc eaunit/spec_gen/src/grammar.erl
+[0013]: erlc eaunit/spec/4/People.asn1
+[0013]: cp
+[0014]: erlc eaunit/spec_gen/src/People.erl
+[0016]: erlc eaunit/src/minimal.erl
+[0016]: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/eaunit/ebin/minimal.bea#: error writing file
+Build FAILED
+The build took 33.25 real seconds
+The build system used 1.86 (50.27%) user/3.18 (61.04%) system CPU seconds
+The child processes used 1.84 (49.73%) user/2.03 (38.96%) system CPU seconds
+The build altogether used 3.70 user/5.21 system CPU seconds
+0.27 CPUs were fully utilized
+</system-out>
+		</testcase>
+	</testsuite>
+	<testsuite errors="0" failures="2" hostname="esekiws5498" name="PYEXEC_Erlang_eagbuild" skipped="0" tests="5" time="475.123717308">
+		<testcase classname="eagbuild_test.EAGBuildTest" name="test_eag_build" time="75.9156520367">
+			<failure message="test failure">self = &lt;eagbuild_test.EAGBuildTest testMethod=test_eag_build&gt;
+
+    def test_eag_build(self):
+        c = cdf_lib.Cdf( &quot;EAG1&quot; )
+        c.buildUnit( flags=[&quot;-c&quot;, &quot;-j&quot;, &quot;8&quot;] )
+        self.assertTrue( c.isBuildSuccessful() )
+        c.buildUnit( flags=[&quot;-j&quot;, &quot;8&quot;] )
+&gt;       self.assertTrue( c.isBuildSuccessful() )
+E       AssertionError: False is not true
+
+eagbuild_test.py:18: AssertionError</failure>
+			<system-out>[0001]: Building of unit erlunit is successful.
+[0002]: Building of unit ou is successful.
+[0003]: Building of unit scc is successful.
+[0004]: Building of unit scf is successful.
+[0005]: Building of unit eaunit is successful.
+[0006]: Building of unit eu is successful.
+Error: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/erlunit/ebin missing.
+Error: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/eu/bin/cba-coremw-x86_64 missing.
+Error: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/ou/lib/cba-coremw-x86_64 missing.
+Error: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/scc/obj/cba-coremw-x86_64 missing.
+Error: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/scf/obj/cba-coremw-x86_64 missing.
+Build FAILED
+The build took 26.16 real seconds
+The build system used 1.99 (80.89%) user/4.02 (95.49%) system CPU seconds
+The child processes used 0.47 (19.11%) user/0.19 (4.51%) system CPU seconds
+The build altogether used 2.46 user/4.21 system CPU seconds
+0.25 CPUs were fully utilized
+</system-out>
+		</testcase>
+		<testcase classname="eagbuild_test.EAGBuildTest" name="test_eag_only_build" time="180.152023077">
+			<failure message="test failure">self = &lt;eagbuild_test.EAGBuildTest testMethod=test_eag_only_build&gt;
+
+    def test_eag_only_build(self):
+        c = Cdf(&quot;EAG1&quot;)
+        for unit in c.getRelFrom(&quot;EAG1&quot;):
+&gt;           build_and_validate(self,unit)
+
+eagbuild_test.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;eagbuild_test.EAGBuildTest testMethod=test_eag_only_build&gt;
+unitname = 'eaunit', build_flags = [], validator_file = None, check_all = False
+
+    def build_and_validate(self, unitname, build_flags=[], validator_file=None, check_all=False):
+        c = Cdf(unitname)
+        c.checkUnitExistence()
+        unitPath = c.getPath(unitname)
+    
+        if &quot;-f&quot; not in build_flags:
+            recflag = [&quot;-r&quot;] if &quot;-r&quot; in build_flags else []
+            c.buildUnit(flags=[&quot;-c&quot;, &quot;-j&quot;, &quot;8&quot;] + recflag)
+            self.assertTrue(c.isBuildSuccessful(), &quot;Clean build output: %s&quot; % c.buildout)
+        c.buildUnit(flags=[&quot;-j&quot;, &quot;8&quot;] + build_flags)
+    
+        self.assertTrue(c.isBuildSuccessful(), &quot;Build output: %s&quot; % c.buildout)
+    
+        expectedFileName = validator_file if validator_file else unitname
+    
+        if &quot;-b&quot; in build_flags:
+            b_pos = build_flags.index(&quot;-b&quot;)
+            buildDirectory = build_flags[b_pos+1]
+        else:
+            buildDirectory = None
+    
+&gt;       validate(self, c, expectedFileName, check_all, buildDirectory, unitPath)
+
+../../../../CDE_TEST_DT/lib/python2.7/erlang_test_lib.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;eagbuild_test.EAGBuildTest testMethod=test_eag_only_build&gt;
+cdfUnit = &lt;cdf_lib.Cdf object at 0xe95190&gt;, expectedFileName = 'eaunit'
+check_all = False, buildDirectory = None
+unitPath = '/vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/eaunit'
+
+    def validate(self, cdfUnit, expectedFileName, check_all=False, buildDirectory=None, unitPath=None):
+    
+        cdfUnit.checkUnitExistence()
+    
+        unitPath = unitPath if unitPath else cdfUnit.getPath(cdfUnit.unitName)
+    
+        expectedFileList = get_expected_build(unitPath, expectedFileName)
+    
+        resultFileList = get_result_build(unitPath, buildDirectory)
+    
+        #Compare the built artifacts with the expected result
+&gt;       self.assertEqual(resultFileList, expectedFileList, &quot;The build output has been changed.\nExpected: %s\nResult: %s&quot; % (str(expectedFileList), str(resultFileList)))
+E       AssertionError: The build output has been changed.
+E       Expected: ['UnitAttributes.xml', 'eaunit_build', 'eaunit_edoc_build', 'eaunit_unittest_build', 'ebin', 'ebin/People.beam', 'ebin/f.beam', 'ebin/grammar.beam', 'ebin/minimal.beam', 'include', 'include/public.hrl', 'spec', 'spec/1', 'spec/1/f.erl', 'spec/2', 'spec/2/MINIMAL.mib', 'spec/3', 'spec/3/grammar.yrl', 'spec/4', 'spec/4/People.asn1', 'spec_gen', 'spec_gen/include', 'spec_gen/include/MINIMAL.bin', 'spec_gen/include/MINIMAL.hrl', 'spec_gen/include/People.asn1db', 'spec_gen/include/People.erl', 'spec_gen/include/People.hrl', 'spec_gen/src', 'spec_gen/src/People.erl', 'spec_gen/src/grammar.erl', 'src', 'src/minimal.erl', 'src/private.hrl', 'test', 'test/dialyzer', 'test/dialyzer/eaunit.plt', 'test/unit', 'test/unit/minimal_tests.erl']
+E       Result: ['UnitAttributes.xml', 'eaunit_build', 'eaunit_edoc_build', 'eaunit_unittest_build', 'ebin', 'ebin/People.beam', 'ebin/f.beam', 'ebin/grammar.beam', 'ebin/minimal.beam', 'include', 'include/public.hrl', 'spec', 'spec/1', 'spec/1/f.erl', 'spec/2', 'spec/2/MINIMAL.mib', 'spec/3', 'spec/3/grammar.yrl', 'spec/4', 'spec/4/People.asn1', 'spec_gen', 'spec_gen/include', 'spec_gen/include/MINIMAL.bin', 'spec_gen/include/MINIMAL.hrl', 'spec_gen/include/People.asn1db', 'spec_gen/include/People.erl', 'spec_gen/include/People.hrl', 'spec_gen/src', 'spec_gen/src/People.erl', 'spec_gen/src/grammar.erl', 'src', 'src/minimal.erl', 'src/private.hrl', 'src/public.hrl', 'test', 'test/dialyzer', 'test/dialyzer/eaunit.plt', 'test/unit', 'test/unit/minimal_tests.erl']
+
+../../../../CDE_TEST_DT/lib/python2.7/erlang_test_lib.py:47: AssertionError</failure>
+		</testcase>
+		<testcase classname="eagbuild_test.EAGBuildTest" name="test_eagwithapp_build" time="72.2768371105"/>
+		<testcase classname="eagbuild_test.EAGBuildTest" name="test_eagwitheag_build" time="73.2941520214"/>
+		<testcase classname="eagbuild_test.EAGBuildTest" name="test_eagwithsu_build" time="73.4850530624"/>
+	</testsuite>
+	<testsuite errors="0" failures="1" hostname="esekiws5096" name="PYEXEC_Erlang_hrldependency" skipped="0" tests="3" time="365.904478072">
+		<testcase classname="hrldependency_test.HrlDependencyTest" name="test_hrldependency_build_with_new_hrl" time="136.069370031"/>
+		<testcase classname="hrldependency_test.HrlDependencyTest" name="test_hrldependency_build_with_unit_validation" time="126.186707973"/>
+		<testcase classname="hrldependency_test.HrlDependencyTest" name="test_hrldependency_build_without_unit_validation" time="103.648400068">
+			<failure message="test failure">self = &lt;hrldependency_test.HrlDependencyTest testMethod=test_hrldependency_build_without_unit_validation&gt;
+
+    def test_hrldependency_build_without_unit_validation(self):
+        &quot;&quot;&quot;Testing if the necessary erlang source files are rebuilt when an erlang header file is updated and put to src folder, without validating the build of the unit.&quot;&quot;&quot;
+        testunit = &quot;eaunit&quot;
+        # Copy to src and change the included hrl file (creating a view private file)
+        testclass = Cdf(testunit)
+        eapath = testclass.getPath(testunit)
+        beam = &quot;minimal.beam&quot;
+        command_line_base = 'md5sum ' + eapath + &quot;/ebin/&quot; + beam
+        command_line = shlex.split(command_line_base)
+    
+        testclass.checkUnitExistence(),
+        testclass.buildUnit(flags=[&quot;-c&quot;, &quot;-j&quot;, &quot;8&quot;, &quot;-r&quot;])
+        self.assertTrue(testclass.isBuildSuccessful(), &quot;Clean build output: %s&quot; % testclass.buildout)
+    
+        try:
+            hrlfilename = eapath + &quot;/src/public.hrl&quot;
+    
+            shutil.copy(eapath + '/include/public.hrl', eapath + '/src/')
+    
+            testclass.buildUnit(flags=[&quot;-j&quot;, &quot;8&quot;, &quot;-r&quot;])
+            self.assertTrue(testclass.isBuildSuccessful(), &quot;Build output: %s&quot; % testclass.buildout)
+    
+            # Get the md5sum for the generated beam file
+            oldmd5sum = subprocess.check_output(command_line).split()[0]
+    
+            os.chmod(hrlfilename, 0644)
+            hrlfile = open(hrlfilename, 'a')
+            hrlfile.write(&quot;-record(public_rec2, {}).&quot;)
+            hrlfile.flush()
+            hrlfile.close()
+    
+            # Build again and get the new md5sum
+            testclass.buildUnit(flags=[&quot;-j&quot;, &quot;8&quot;])
+&gt;           self.assertTrue(testclass.isBuildSuccessful())
+E           AssertionError: False is not true
+
+hrldependency_test.py:85: AssertionError</failure>
+			<system-out>[0016]: erlc eaunit/src/minimal.erl
+[0016]: /vobs/ims/cde/ft/ct/CDE_TEC_CT/LYNX_ERLANG_TES/test_units/eaunit/ebin/minimal.bea#: error writing file
+Build FAILED
+The build took 22.74 real seconds
+The build system used 1.91 (72.62%) user/4.06 (88.65%) system CPU seconds
+The child processes used 0.72 (27.38%) user/0.52 (11.35%) system CPU seconds
+The build altogether used 2.63 user/4.58 system CPU seconds
+0.32 CPUs were fully utilized
+</system-out>
+		</testcase>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws6095" name="PYEXEC_Erlang_linux" skipped="0" tests="1" time="88.6741600037">
+		<testcase classname="linux_test.Linux_test" name="test_define_addition" time="88.6741600037"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5334" name="PYEXEC_Erlang_multibuild" skipped="0" tests="1" time="148.745110989">
+		<testcase classname="multibuild_test.RecursiveBuildTest" name="test_multi_build" time="148.745110989"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5504" name="PYEXEC_Erlang_unittest" skipped="0" tests="2" time="199.37874198">
+		<testcase classname="unittest_test.ErlangUnitTest" name="test_unittest_build" time="90.4030799866"/>
+		<testcase classname="unittest_test.ErlangUnitTest" name="test_unittest_with_module_build" time="108.975661993"/>
+	</testsuite>
+</testsuites>

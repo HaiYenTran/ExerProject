@@ -1,0 +1,92 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+autonumber
+
+skinparam sequence {
+	ArrowColor DeepSkyBlue
+	ActorBorderColor DeepSkyBlue
+	LifeLineBorderColor blue
+	LifeLineBackgroundColor #A9DCDF
+	
+	ParticipantBorderColor DeepSkyBlue
+	ParticipantBackgroundColor DodgerBlue
+	ParticipantFontName Impact
+	ParticipantFontSize 17
+	ParticipantFontColor #A9DCDF
+	
+	ActorBackgroundColor aqua
+	ActorFontColor DeepSkyBlue
+	ActorFontSize 17
+	ActorFontName Aapex
+}
+box "Testers" #LightGreen
+	participant "Testers" as testers
+end box
+
+
+box "Nodes" #LightGreen
+	participant "MTAS" as mtas
+end box
+
+actor "Nodes Guardians" as ng
+
+box "Jobs" #LightRed
+	actor Controller as controller
+end box
+
+actor "ILES Guardians" as vmtas
+participant Leo
+
+box "DAO" #LightGrey
+	participant MTAS as dmtas
+	participant IBCF as sbg1
+	participant "P-CSCF" as sbg2
+	participant CSCF as dcscf
+	participant "APPROVED\nBASELINE" as confirm
+end box
+
+note over confirm : MTAS 1.0\nP-CSCF 1.0\nCSCF 1.0\nIBCF 1.0\nINT 1.0\nCFG 1.0\nPROV 1.0
+
+group FAIL LOOP
+	mtas -> controller : Sending ITR Event
+	note left : Data in ITR Event:\n\tproduct: MTAS\n\tbaseline: 2.0 (version to new loop)\n\tartifact-image: address\n\tparameters-list: URL of ConfigParam\n\tfastLoop :false
+	controller -> dmtas : Save new version Node in DataBase
+	note over dmtas : MTAS 2.0\nNB
+	note over controller : CleanUp HSS\nInstall all nodes\nConfigure all nodes\nProvision\nTest
+	controller -> mtas : Response BTF Event
+	note left : Data in BTF Event:\n\tphase - phase of installation\n\tphaseStatus- status of phase\n\tmessage - information about event\n\tresults - link to logs\n\tfinal - true\n\tproducts:\tMTAS\n\t\t\tP-CSCF\n\t\t\tIBCF\n\t\t\tCSCF\n\t\t\tINT\n\t\t\tCFG\n\t\t\tPROV\n\tbaselines: \t2.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0
+	controller -> dmtas : Change status node
+	note over dmtas : MTAS 2.0\nBCandidate
+	note over controller : Start voting
+	controller -> vmtas : Send mail with baseline test information
+	controller -> Leo: trigger voting start
+	note over controller : Data in the Rest request:\n    end time
+	vmtas -> Leo: vote(Reject)
+	Leo -> controller : OPB Vote with status FALSE
+	note left : Data in OPB Event:\n\tproducts:\tMTAS\n\t\t\tP-CSCF\n\t\t\tIBCF\n\t\t\tCSCF\n\t\t\tINT\n\t\t\tCFG\n\t\t\tPROV\n\tbaselines: \t2.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\tvote:\tfalse\n\tsignums:\tILES Guardian\n\tcomment - coments to voting
+	controller -> dmtas : Delete node from Data Base
+	note over dmtas : MTAS 2.0\nDELETE
+	controller -> ng : Send mail
+end
+
+group LOOP TIMEOUT
+	mtas -> controller : Sending ITR Event
+	note left : Data in ITR Event:\n\tproduct: MTAS\n\tbaseline: 2.0 (version to new loop)\n\tartifact-image: address\n\tparameters-list: URL of ConfigParam\n\tfastLoop :false
+	controller -> dmtas : Save new version Node in DataBase
+	note over dmtas : MTAS 2.0\nNB
+	note over controller : CleanUp HSS\nInstall all nodes\nConfigure all nodes\nProvision\nTest
+	controller -> mtas : Response BTF Event
+	note left : Data in BTF Event:\n\tphase - phase of installation\n\tphaseStatus- status of phase\n\tmessage - information about event\n\tresults - link to logs\n\tfinal - true\n\tproducts:\tMTAS\n\t\t\tP-CSCF\n\t\t\tIBCF\n\t\t\tCSCF\n\t\t\tINT\n\t\t\tCFG\n\t\t\tPROV\n\tbaselines: \t2.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0\n\t\t\t1.0
+	controller -> dmtas : Change node status
+	note over dmtas : MTAS 2.0\nBCandidate
+	note over controller : Start voting
+	controller -> vmtas : Send mail with baseline test information
+	note over controller : Data in the Rest request:\n    end time
+	controller -> Leo: trigger voting start
+	note over controller, vmtas : Timeout on voting
+	controller -> vmtas : Send mail with information about stopped voting
+	controller -> dmtas : Delete node from Data Base
+	note over dmtas : MTAS 2.0\nDELETE
+end
+@enduml 

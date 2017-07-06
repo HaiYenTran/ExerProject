@@ -1,0 +1,42 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+actor "INT CI jenkins" as prod
+
+box "/proj storage"
+    participant proj
+end box
+
+actor "ILES CI jenkins" as iles
+
+group Existing INT build job
+    prod -> prod: Clone git repo
+    prod -> prod : Build INT
+end
+    prod -> proj : cp INT to /proj
+    prod -> iles : NCA to ILES CI
+    note left : Data in NCA Event:\n\tproduct: INT\n\tbaseline: 2.0\n\tURL: /proj/...
+	iles -> iles : Run baseline loop
+	iles -> prod: NCF
+	
+@enduml

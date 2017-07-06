@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>NODE_TYPE</name>
+          <description>[MANDATORY]: Name of IMS Node: MTAS, CSCF, PCSCF, IBCF, INT,...</description>
+          <defaultValue>AGW</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>[MANDATORY]: Version of IMS software package, ex: R1G27</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>LOOP_TYPE</name>
+          <description>TEST: Testing only
+&lt;br&gt;BASELINE: Require test and approve</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>TEST</string>
+              <string>BASELINE</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JOB_ID</name>
+          <description>Use for LEO reporting. If it&apos;s empty, ILES CI will auto-create a new JOB_ID with format: [Node]_ + date.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>true</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.SystemGroovy plugin="groovy@1.30">
+      <scriptSource class="hudson.plugins.groovy.FileScriptSource">
+        <scriptFile>/proj/ims_lu/cba_cde/iles_ci/dev_db/scripts/create_config_properties_file.groovy</scriptFile>
+      </scriptSource>
+      <bindings>DB=/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline
+configDefault=/proj/ims_lu/cba_cde/int_ci/deliveries/intX/config/LATEST
+configTmp=/proj/ims_lu/cba_cde/iles_ci/dev_db/tools/tmp
+ENVSYSTEM=PRODUCTION</bindings>
+      <classpath></classpath>
+    </hudson.plugins.groovy.SystemGroovy>
+    <com.ericsson.becrux.communicator.nodesimulator.ITRSenderBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <tag>production</tag>
+      <customTag>true</customTag>
+      <nodeType>${NODE_TYPE}</nodeType>
+      <version>${VERSION}</version>
+      <loopType>${LOOP_TYPE}</loopType>
+      <parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>INT_CONFIG</key>
+          <value>{installable:false,version:${INT_VERSION_GUI},config_properties:${CONFIG_PROPERTIES_GUI}}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>ITR_SENDER_JOB_NAME</key>
+          <value>${JOB_NAME}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>ITR_SENDER_JOB_BUILD</key>
+          <value>${BUILD_ID}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>CLIENT_JENKINS</key>
+          <value>${JENKINS_URL}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+      </parameters>
+      <jobId>${JOB_ID}</jobId>
+    </com.ericsson.becrux.communicator.nodesimulator.ITRSenderBuildStep>
+    <com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <delayTime>3</delayTime>
+      <waitingTime>120</waitingTime>
+      <btfEventReceivedType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>STARTLOOP</string>
+          <string>WAITING</string>
+          <string>REJECT</string>
+          <string>RESTART</string>
+        </a>
+      </btfEventReceivedType>
+      <btfEventRejectType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>REJECT</string>
+          <string>WAITING</string>
+        </a>
+      </btfEventRejectType>
+      <eventDAOPath>/proj/ims_lu/cba_cde/iles_ci/dev_db/manageBTFEvents/fem035</eventDAOPath>
+      <queueName>BTFEvents</queueName>
+      <instancePropertyName>WORKER_URL</instancePropertyName>
+    </com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+# Format SYNC_LOG_LINK=*/JOB_NAME/BUILD_NUMBER/console[Full]
+
+Green=&apos;\033[0;32m&apos;
+Reset=&apos;\033[0;0m&apos;
+
+echo -e &quot;\n\n\n$Green&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;#                          START SYNC LOG                        #&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;\n\n\n$Reset&quot;
+
+JAR_DIR=/proj/ims_lu/cba_cde/int_ci/deliveries/extra/jenkins-cli.jar
+#SYNC_LOG_LINK=https://fem023-eiffel021.rnd.ki.sw.ericsson.se:8443/jenkins/job/VISE0203/1/console
+SYNC_LOG_LINK=${WORKER_URL}
+SYNC_LOG_LINK=${SYNC_LOG_LINK%*/console*}
+condition=`echo $SYNC_LOG_LINK | grep job | grep view`
+if [ &quot;$condition&quot; == &quot;&quot; ]; then
+    FEM_URL=${SYNC_LOG_LINK%*/job*}
+else
+    FEM_URL=${SYNC_LOG_LINK%*/view*}
+fi
+LOG_BUILD_NUMBER=${SYNC_LOG_LINK##*/}
+SYNC_LOG_LINK=${SYNC_LOG_LINK%/*}
+LOG_JOB_NAME=${SYNC_LOG_LINK##*/}
+java -jar $JAR_DIR -s $FEM_URL console $LOG_JOB_NAME $LOG_BUILD_NUMBER -f
+
+echo -e &quot;\n\n\n$Green&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;#                            END SYNC LOG                        #&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;\n\n\n$Reset&quot;</command>
+    </hudson.tasks.Shell>
+    <com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <delayTime>3</delayTime>
+      <waitingTime>120</waitingTime>
+      <btfEventReceivedType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ENDLOOP</string>
+        </a>
+      </btfEventReceivedType>
+      <btfEventRejectType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string></string>
+        </a>
+      </btfEventRejectType>
+      <eventDAOPath>/proj/ims_lu/cba_cde/iles_ci/dev_db/manageBTFEvents/fem035</eventDAOPath>
+      <queueName>BTFEvents</queueName>
+      <instancePropertyName></instancePropertyName>
+    </com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep>
+  </builders>
+  <publishers>
+    <com.ericsson.becrux.communicator.nodesimulator.MakeBadgePostBuildStep plugin="iles-communicator@R1A01-SNAPSHOT"/>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.5.0">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+  </buildWrappers>
+</project>

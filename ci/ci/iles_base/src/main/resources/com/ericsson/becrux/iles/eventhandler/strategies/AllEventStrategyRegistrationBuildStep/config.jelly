@@ -1,0 +1,19 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+	<f:entry title="ITR: Name of the VISE Channel Pool to use for the loop" >
+		<f:textbox field="poolName" />
+	</f:entry>
+
+	<f:entry title="ITR: Name of the worker job" >
+		<f:textbox field="workerJobName" />
+    </f:entry>
+
+    <f:entry title="BTF: Threshold of number passed testcase to start the Voting request " >
+       <f:textbox field="votingThreshold" />
+    </f:entry>
+
+ </j:jelly>

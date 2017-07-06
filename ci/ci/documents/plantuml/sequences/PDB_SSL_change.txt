@@ -1,0 +1,61 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+actor "CI Engine\nAdmin" as admin
+
+box "Leo" #LightRed
+    participant Leo as leo
+end box
+
+actor "ILES\nProduction CI" as prod
+
+box "/proj storage" #LightRed
+	participant "config data" as configdata
+end box
+
+box "CI\nDB" #LightGrey
+    participant "SSL" as ssl
+end box
+
+participant PDB as pdb
+
+    admin -> prod : Enter 2.0 version\nfor VISE103 config via admin GUI
+    prod -> ssl : save tested SSL state in the DB
+    note over ssl : SSL_103 2.0\nBaselineCandidate
+    prod -> pdb : get SSL data
+    prod -> configdata : store config data
+group Standard install & test flow
+    prod -> configdata : use new SSL data
+    prod -> prod: Install all nodes
+    prod -> prod : Configure all nodes\nProvision\nTest
+end    
+alt If voting is needed
+    prod->leo: Start voting
+    prod -> admin: Mail about voting start
+    admin->leo: vote(ok)
+    leo->prod: OPB(ok)
+end
+    prod -> ssl : Change SSL_103 state
+    note over ssl : SSL_103 2.0\nApprovedBaseline
+
+@enduml 

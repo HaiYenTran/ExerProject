@@ -1,0 +1,69 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+box "PDB Config\nOwners"
+    participant "INT delivery job" as testers
+end box
+
+actor "INT Guardians" as ng
+
+box "Leo" #LightRed
+    participant Leo as leo
+end box
+
+actor "ILES\nProduction CI" as prod
+
+participant "storage" as proj
+
+box "CI\nDB" #LightGrey
+    participant INT as db
+    participant "MNBL" as mnbl
+end box
+
+participant "docker registry" as repo
+
+    note over mnbl : MTAS 1.0\nP-CSCF 1.0\nCSCF 1.0\nIBCF 1.0\nINT 1.0\nCFG 1.0\nPROV 1.0
+
+    testers -> prod : ITR
+    note left : Data in ITR Event:\n\tproduct: INT\n\tbaseline: 2.0\n
+    prod -> db : Save INT version being tested in the DB
+    note over db : INT 2.0\nBaselineCandidate
+group Standard install & test flow
+    prod -> prod: Install all nodes
+    prod -> prod : Configure all nodes\nProvision
+    prod -> repo : pull the docker image (INT_2.0)
+    prod -> prod: Test using pulled image
+end
+    prod -> testers : BTF
+alt If voting is needed
+    prod->leo: Start voting
+    prod -> ng: Mail about voting start
+    ng->leo: vote(ok)
+    leo->prod: OPB(ok)
+end
+    prod -> db : Change INT status
+    note over db : INT 2.0\nApproved Baseline
+    prod -> mnbl : Change MNBL version
+    note over mnbl : MTAS 1.0\nP-CSCF 1.0\nCSCF 1.0\nIBCF 1.0\nINT 2.0\nCFG 1.0\nPROV 1.0
+
+@enduml

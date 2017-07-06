@@ -1,0 +1,36 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" 	xmlns:st="jelly:stapler" 
+		 xmlns:d="jelly:define" xmlns:l="/lib/layout" 
+		 xmlns:t="/lib/hudson" 	xmlns:f="/lib/form"
+		 xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+
+    <f:entry title="Delay time" field="delayTime" description="The delay time waiting between every query request.">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Waiting time" field="waitingTime" description="Maximum waiting time for the build step to wait for Events">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="BTFEvent Received type" field="btfEventReceivedType" description="The type of BTFEvent for querying. Note: for multiple type, every will be separates by a comma">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="BTFEvent Rejected type" field="btfEventRejectType" description="The build will stop if received BTF Events with these type. Note: for multiple type, every will be separates by a comma">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="The build parameter name" field="instancePropertyName" description="The name of build parameter which contain WORKER url">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Event DAO path" field="eventDAOPath" description="The path to Event DAO that contains requested Events">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Event queue name" field="queueName" description="The name of event queue">
+        <f:textbox />
+    </f:entry>
+
+</j:jelly>

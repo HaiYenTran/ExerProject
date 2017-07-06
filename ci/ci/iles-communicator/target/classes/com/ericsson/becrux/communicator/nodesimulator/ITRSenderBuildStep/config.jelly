@@ -1,0 +1,51 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" 	xmlns:st="jelly:stapler" 
+		 xmlns:d="jelly:define" xmlns:l="/lib/layout" 
+		 xmlns:t="/lib/hudson" 	xmlns:f="/lib/form"
+		 xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+  <f:entry title="Node Type" field="nodeType" description="Enter your Node Type, ie MTAS, CSCF, IBCF, P-CSCF, INT,...">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Node Version" field="version" description="Enter revision of your Node package, ie R1A01">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Loop Type" field="loopType" description="Enter Loop Type: BASELINE or TEST">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="jobId in Leo" field="jobId" description="Enter job ID if it exists in LEO">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Parameters" description="Enter the list of parameters with key and value">
+    <f:repeatable field="parameters" add="Add" >
+      <table>
+
+        <f:optionalBlock name="extendedCondition" title="Use extended condition " checked="${instance.extendedCondition}" inline="true">
+              <f:entry title="Condition" >
+                <f:textbox field="condition" />
+              </f:entry>
+        </f:optionalBlock>
+
+        <f:entry title="Parameter Name" >
+         <f:textbox field="key" />
+        </f:entry>
+
+        <f:entry title="Value" >
+          <f:textbox field="value" />
+        </f:entry>
+
+        <f:entry>
+          <div align="right">
+            <f:repeatableDeleteButton value="Remove" />
+          </div>
+        </f:entry>
+
+      </table>
+    </f:repeatable>
+  </f:entry>
+  <f:optionalBlock name="customTag" title="Use the custom tag to send events" checked="${instance.customTag}" inline="true">
+          <f:entry title="Tag" description="Enter the tag in routing key">
+              <f:textbox field="tag" />
+          </f:entry>
+  </f:optionalBlock>
+
+</j:jelly>

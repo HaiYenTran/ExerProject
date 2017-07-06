@@ -1,0 +1,18 @@
+@startuml
+:start;
+if (Reviewed piece of code is testable?) then (yes)
+else (no)
+  :Peer-to-peer meeting with the author
+  Decide on how to refactor
+  code to be testable;
+  :Refactor;
+endif
+:Write tests for it;
+:Perform the review
+and refactor if needed,
+in a branch;
+:Peer-to-peer meeting with the author.
+Discuss the changes.;
+:Commit the changes.;
+:end;
+@enduml

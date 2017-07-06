@@ -1,0 +1,27 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+<f:section title="ILES: Eiffel Event Receiver" >
+    <f:entry title="Only receive events with specific tag" description="Default = *">
+        <f:textbox field="tag" />
+    </f:entry>
+
+    <f:entry title="Only receive events with specific types" description="Supported types: ITREvent, BTFEvent ">
+        <f:textbox field="receivedEventTypes" />
+    </f:entry>
+
+    <f:optionalBlock name="customBindings" title="Use the custom Eiffel Event " checked="${instance.customBindings}" inline="true">
+        <f:entry title="Eiffel secondary bindings (one each line)">
+            <f:textarea field="secondaryBindings.bindingKey" />
+        </f:entry>
+        <f:entry title="Event polling timeout (in milliseconds)"  field="timeout" description="Default = 5000">
+            <f:textbox field="timeout" />
+        </f:entry>
+    </f:optionalBlock>
+
+
+</f:section>
+</j:jelly>

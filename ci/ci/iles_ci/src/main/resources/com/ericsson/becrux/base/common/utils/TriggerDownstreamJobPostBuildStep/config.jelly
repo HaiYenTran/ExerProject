@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" 	xmlns:st="jelly:stapler"
+		 xmlns:d="jelly:define" xmlns:l="/lib/layout"
+		 xmlns:t="/lib/hudson" 	xmlns:f="/lib/form"
+		 xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+  <f:entry title="Job name" description="The name of triggered job.">
+      	<f:textbox field="jobName" />
+  </f:entry>
+  <f:entry title="Delay[s]" description="The time when downstream job is waiting in Jenkins queue.">
+  		<f:textbox field="delay" />
+  </f:entry>
+</j:jelly>

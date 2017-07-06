@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>7</daysToKeep>
+        <numToKeep>100</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.ericsson.becrux.iles.eiffel.IlesEiffelEventSenderBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <tag></tag>
+      <customTag>false</customTag>
+      <eventFactory class="com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.eiffel.events.Event</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>BaseEventImpl</string>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+            </entry>
+            <entry>
+              <string>BTFEvent</string>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BTFEvent</java-class>
+            </entry>
+            <entry>
+              <string>ITREvent</string>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.ITREvent</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+              <string>BaseEventImpl</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BTFEvent</java-class>
+              <string>BTFEvent</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.ITREvent</java-class>
+              <string>ITREvent</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.eiffel.events.Event</clazz>
+        <registeredClasses>
+          <entry>
+            <string>BaseEventImpl</string>
+            <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+          </entry>
+          <entry>
+            <string>ITREvent</string>
+            <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.ITREvent</java-class>
+          </entry>
+          <entry>
+            <string>BTFEvent</string>
+            <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BTFEvent</java-class>
+          </entry>
+        </registeredClasses>
+      </eventFactory>
+    </com.ericsson.becrux.iles.eiffel.IlesEiffelEventSenderBuildStep>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,99 @@
+ #!/bin/bash
+cd `readlink -f $0 | xargs dirname`
+source ./ilesci_lib.sh
+source ./ilesci_build_software.sh
+source ./ilesci_deploy_jenkins.sh
+source ./ilesci_update_config_job.sh
+
+########################### DECLARE GLOBAL VARIABLE ###############
+# Description:
+# GF: Global flag
+# GP: Global path
+# GV: Global variable
+
+GF_clone_git=true 			# For security reason, force clone fresh GIT reposity on other place
+GP_cur_script_dir=$(pwd)
+GP_git_home=/local/scratch/$USER/INT
+GP_delivery_temp_dir=/local/scratch/$USER/temp # Contain all log during delivery/deployment
+GV_env=""
+GV_version=""
+
+
+
+
+
+########################### FUNCTION ##############################
+function Fun_help() {
+    printf "$GD_line" "$GD_div"
+    echo -e "\t${Blue}${Bold}* Instruction:${NoBold}${Black}"
+    echo -e "\t\t- Scope: ILES CI Interactive."
+    echo -e "\t\t- #Setup: module add ilesci_delivery" #Map & source .cshrc.user: \"alias ilesci_delivery /proj/htdocs/root/ci/ci_main\""
+    echo -e "\t${Blue}${Bold}* Option:${NoBold}${Black}"
+    echo -e "\t\t${Bold}+ Help/Instruction:${NoBold}"
+    printf "$GD_option" "[   -h|--help]" "Display all description."
+    echo -e "\t\t${Bold}+ Deploy Jenkins:${NoBold}"
+    printf "$GD_option" "[   -j|--jenkins [env:server:port]" "Deploy Jenkins based on configuration file."   
+	printf "$GD_option" "env value: prod|stand|node|gui|prewash" ""   
+    printf "$GD_option" "Example: -j prod:fem002_8083:8083" "Overide value in config file"
+    printf "$GD_option" "         -j prod:fem002_8083" "Use default port"
+    printf "$GD_option" "         -j prod::8083" "Use default Jenkins server's name"
+    printf "$GD_option" "         -j prod" "Use default Jenkins config"
+    printf "$GD_option" "[   -v|--version [ILES CI Ver]" "Deploy specific version. Default (empty): Use value in .cfg"   
+    printf "$GD_option" "[   -d|--debug]" "Print Maven debug. Defauly (empty): No debug"
+    printf "$GD_line" "$GD_div"
+}
+#------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+#-------------------------- Parsing arguments ---------------------
+function Fun_parsing_arguments() {
+	[[ $# -eq 0 ]] && Fun_help && exit
+    while test $# -gt 0; do
+	case "$1" in
+	#------------------ Deployment ---------------------
+		(-j|--jenkins)
+			if $(Fun_is_value $2); then
+				while $(Fun_is_value $2); do
+					case $2 in
+						(prod*|stand*|node*|gui*|prewash*) GV_env+="$2 "; shift;;
+						(*) echo -e "\t- Provided Environment: ${Light_red}$2${Black} is invalid. Exit!${Black}"; exit
+					esac
+				done
+			else
+				echo -e "\t- Invalid (empty) Environment. Exit!${Black}"; exit
+			fi;;
+		(-v|--version)
+			if $(Fun_is_value $2); then
+				GV_version=$2; shift
+			fi;;
+	#------------------ Help ---------------------------
+		(h|--help)
+			Fun_help;;
+	    (*) echo -e "\t${Red}- Invalid argurment: $1. Exit!!!${Black}"; exit;;
+	esac
+	shift
+	done
+}
+########################### MAIN SCRIPT ###########################
+#-------------------------- Parsing arguments (support group character)
+while test $# -gt 0; do
+    case "$1" in
+	(-port) LC_params+="$1 ";;
+	(--*) 	LC_params+="$1 ";;
+	(-*) 	LC_flags=${1:1:${#1}}   # Break down group option to single options
+	    LC_flags=$(echo $LC_flags | fold -w 1)
+	    for LC_flag in $LC_flags; do LC_params+="-$LC_flag "; done;;
+	(*) 	LC_params+="$1 ";;
+    esac
+    shift
+done
+echo -e "\n"
+Fun_parsing_arguments $LC_params
+[[ -n $GV_env ]] && Fun_process_loop $GV_env

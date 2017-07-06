@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slave>
+  <name>Phoenix.sekilxc1345</name>
+  <description></description>
+  <remoteFS>/tmp/fem002-eiffel021_8083</remoteFS>
+  <numExecutors>8</numExecutors>
+  <mode>EXCLUSIVE</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Demand">
+    <inDemandDelay>1</inDemandDelay>
+    <idleDelay>10</idleDelay>
+  </retentionStrategy>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
+    <host>sekilxc1345.rnd.ki.sw.ericsson.se</host>
+    <port>22</port>
+    <credentialsId>e05cc1ad-ea8b-4d71-b410-dd148a4ab8de</credentialsId>
+    <prefixStartSlaveCmd>module add jdk/1.7.0_76 &amp;&amp; </prefixStartSlaveCmd>
+    <maxNumRetries>0</maxNumRetries>
+    <retryWaitTime>0</retryWaitTime>
+  </launcher>
+  <label>Phoenix</label>
+  <nodeProperties/>
+  <userId>elukpop</userId>
+</slave>

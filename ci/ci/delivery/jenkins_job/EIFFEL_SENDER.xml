@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>50</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.ericsson.becrux.iles.eiffel.IlesEiffelEventSenderBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <tag></tag>
+      <customTag>false</customTag>
+      <eventFactory class="com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.eiffel.events.Event</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>BaseEventImpl</string>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+              <string>BaseEventImpl</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.eiffel.events.Event</clazz>
+        <registeredClasses>
+          <entry>
+            <string>BaseEventImpl</string>
+            <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+          </entry>
+        </registeredClasses>
+      </eventFactory>
+    </com.ericsson.becrux.iles.eiffel.IlesEiffelEventSenderBuildStep>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

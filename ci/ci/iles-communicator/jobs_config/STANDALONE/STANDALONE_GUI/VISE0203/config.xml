@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>ILES_TOOLS</name>
+          <description>Tick the box to customize the ILES tools.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Phoenix</name>
+          <description>Enter the path of custom Phoenix and make sure it&apos;s accesible from Jenkins machinery.&lt;br&gt;
+Default value: The LATEST Phoenix.</description>
+          <defaultValue>/proj/ims_lu/cba_cde/int_ci/deliveries/phoenix/LATEST</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Provisioning_exec</name>
+          <description>Enter the path of custom Provisioning and make sure it&apos;s accesible from Jenkins machinery.&lt;br&gt;
+Default value: The LATEST Provisioning.</description>
+          <defaultValue>/proj/ims_lu/cba_cde/int_ci/deliveries/provisioning/LATEST</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Test_exec</name>
+          <description>Enter the path of custom intX and make sure it&apos;s accesible from Jenkins machinery.&lt;br&gt;
+Default value: The LATEST intX.</description>
+          <defaultValue>/proj/ims_lu/cba_cde/int_ci/deliveries/intX/LATEST</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>config.properties</name>
+          <description>Enter the path of custom config properties and make sure it&apos;s accesible from Jenkins machinery.&lt;br&gt;
+Default value: The LATEST approved config.properties path from ILES DB.
+</description>
+          <defaultValue>/proj/ims_lu/cba_cde/int_ci/deliveries/intX/config/LATEST</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>INSTALLATION</name>
+          <description>Tick the box to select IMS Nodes which will be installed on VISE channel.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>MTAS_VERSION</name>
+          <description>Choose the MTAS approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>122ebfcc-1b40-44f7-a5b6-c2348fc3012e</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>MTAS</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>MTAS_SW_or_BL</name>
+          <description>Enter the custom MTAS SW or BL, ie sw_MTAS_R7A05 or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>MTAS_PDB</name>
+          <description>Enter custom PDB configuration for MTAS. Example: -pdb &quot;/IMS NWST vMTAS Mobile VoLTE V708/ILES Extended vMTAS&quot;
+</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>CSCF_VERSION</name>
+          <description>Choose the CSCF approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>f56a21d2-3f42-4bfe-bcff-92cf6b0bb026</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>CSCF</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>CSCF_SW_or_BL</name>
+          <description>Enter the custom CSCF SW or BL, ie sw_CSCF_R4G02 or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>CSCF_PDB</name>
+          <description>Enter custom PDB configuration for CSCF. Example: -pdb &quot;/IMS NWST vCSCF Mobile VoLTE V708/ILES Extended vCSCF&quot; </description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>PCSCF_VERSION</name>
+          <description>Choose the PCSCF approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>8be2abf7-ad2d-4afd-9392-0841d3248f0a</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>PCSCF</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PCSCF_SW_or_BL</name>
+          <description>Enter the custom PCSCF SW or BL, ie sw_PCSCF_R6J86 or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PCSCF_PDB</name>
+          <description>Enter custom PDB configuration for PCSCF. Example: -pdb &quot;/IMS NWST vPCSCF Mobile VoLTE V708/ILES Extended vPCSCF&quot; </description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>IBCF_VERSION</name>
+          <description>Choose the IBCF approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>92a18793-24bd-4935-8c3d-4de1128fc44d</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>IBCF</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IBCF_SW_or_BL</name>
+          <description>Enter the custom IBCF SW or BL, ie sw_IBCF_R7J66 or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IBCF_PDB</name>
+          <description>Enter custom PDB configuration for IBCF. Example: -pdb &quot;/IMS NWST vIBCF Mobile VoLTE V708/ILES Extended vIBCF&quot;</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>AGW_VERSION</name>
+          <description>Choose the AGW approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>c0b08bfd-40a3-47db-b60d-68774d593339</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>AGW</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>AGW_SW_or_BL</name>
+          <description>Enter the custom AGW SW or BL, ie sw_AGW_R24A or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>AGW_PDB</name>
+          <description>Enter custom PDB configuration for AGW.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>TRGW_VERSION</name>
+          <description>Choose the TRGW approved Baseline or custom SW or BL in CIC server. Selecting &apos;None&apos; will skip Installation.</description>
+          <__uuid>09e410a6-c5c0-4a3a-b6c9-abc28123cfa8</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>TRGW</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TRGW_SW_or_BL</name>
+          <description>Enter the custom AGW SW or BL, ie sw_TRGW_R24A or bl_V706_Baseline.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TRGW_PDB</name>
+          <description>Enter custom PDB configuration for TRGW.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>PROVISIONING</name>
+          <description>Tick the box if you want to run Provisioning.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>TESTEXEC</name>
+          <description>Tick the box if you want to run TestExecution.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition plugin="dynamicparameter@0.2.0">
+          <name>INT_VERSION</name>
+          <description>Choose the INT approved Baseline or custom INT package.</description>
+          <__uuid>3294de1e-6b15-4fe1-93a8-b0893f1eb5a3</__uuid>
+          <__remote>true</__remote>
+          <__scriptlerScriptId>getNodeVersion.groovy</__scriptlerScriptId>
+          <__parameters>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>DBPATH</name>
+              <value>/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+            <com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+              <name>NODE</name>
+              <value>INT</value>
+            </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerParameterDefinition_-ScriptParameter>
+          </__parameters>
+          <readonlyInputField>false</readonlyInputField>
+        </com.seitenbau.jenkins.plugins.dynamicparameter.scriptler.ScriptlerChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ARTIFACT</name>
+          <description>The full path for the custom package INT.tar.gz
+&lt;br&gt;Example: /proj/ims_lu/cba_cde/int_ci/deliveries/INT/INT_R1AINT_latest.tar.gz</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TESTCASE_TAGS</name>
+          <description></description>
+          <defaultValue>VERIFIED</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>STORE_PASSED_PCAP</name>
+          <description>Set true if you want to store pcap files for passed test cases.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JOB_DESCRIPTION</name>
+          <description>Adding the description for purpose of job. It can be empty.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>EMAIL_NOTIFICATION</name>
+          <description>Enter email to get notification when job is finished. Support for user&apos;s mail or group. One email per line.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.SystemGroovy plugin="groovy@1.30">
+      <scriptSource class="hudson.plugins.groovy.FileScriptSource">
+        <scriptFile>/proj/ims_lu/cba_cde/iles_ci/dev_db/scripts/stand_alone_gui_parser.groovy</scriptFile>
+      </scriptSource>
+      <bindings>DB=/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline</bindings>
+      <classpath></classpath>
+    </hudson.plugins.groovy.SystemGroovy>
+    <hudson.plugins.groovy.SystemGroovy plugin="groovy@1.30">
+      <scriptSource class="hudson.plugins.groovy.FileScriptSource">
+        <scriptFile>/proj/ims_lu/cba_cde/iles_ci/dev_db/scripts/create_config_properties_file.groovy</scriptFile>
+      </scriptSource>
+      <bindings>DB=/proj/ims_lu/cba_cde/iles_ci/dev_db/baseline
+configDefault=/proj/ims_lu/cba_cde/int_ci/deliveries/intX/config/LATEST
+configTmp=/proj/ims_lu/cba_cde/iles_ci/dev_db/tools/tmp
+ENVSYSTEM=STANDALONE</bindings>
+      <classpath></classpath>
+    </hudson.plugins.groovy.SystemGroovy>
+    <com.ericsson.becrux.communicator.nodesimulator.ITRSenderBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <tag>standalone</tag>
+      <customTag>true</customTag>
+      <nodeType>UNKNOWN</nodeType>
+      <version>UNKNOWN</version>
+      <loopType>TEST</loopType>
+      <parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>INSTALLATION_ABLE</key>
+          <value>${INSTALLATION_GUI}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>PROVISIONING_ABLE</key>
+          <value>${PROVISIONING_GUI}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>TESTEXEC_ABLE</key>
+          <value>${TESTEXEC_GUI}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>MTAS_CONFIG</key>
+          <value>{installable:${MTAS_INSTALLABLE},version:${MTAS_VERSION_GUI},pdb:${MTAS_PDB}}</value>
+          <condition>&apos;${MTAS_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>CSCF_CONFIG</key>
+          <value>{installable:${CSCF_INSTALLABLE},version:${CSCF_VERSION_GUI},pdb:${CSCF_PDB}}</value>
+          <condition>&apos;${CSCF_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>IBCF_CONFIG</key>
+          <value>{installable:${IBCF_INSTALLABLE},version:${IBCF_VERSION_GUI},pdb:${IBCF_PDB}}</value>
+          <condition>&apos;${IBCF_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>PCSCF_CONFIG</key>
+          <value>{installable:${PCSCF_INSTALLABLE},version:${PCSCF_VERSION_GUI},pdb:${PCSCF_PDB}}</value>
+          <condition>&apos;${PCSCF_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>INT_CONFIG</key>
+          <value>{installable:false,version:${INT_VERSION_GUI},config_properties:${CONFIG_PROPERTIES_GUI}}</value>
+          <condition>&apos;${TESTEXEC_GUI}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>TAG</key>
+          <value>vise0203</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>VISE_INFO</key>
+          <value>{name:203, ip:10.50.194.132}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>AGW_CONFIG</key>
+          <value>{installable:${AGW_INSTALLABLE},version:${AGW_VERSION_GUI},pdb:${AGW_PDB}}</value>
+          <condition>&apos;${AGW_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>TRGW_CONFIG</key>
+          <value>{installable:${TRGW_INSTALLABLE},version:${TRGW_VERSION_GUI},pdb:${TRGW_PDB}}</value>
+          <condition>&apos;${TRGW_INSTALLABLE}&apos;==&apos;true&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>ITR_SENDER_JOB_NAME</key>
+          <value>${JOB_NAME}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>ITR_SENDER_JOB_BUILD</key>
+          <value>${BUILD_ID}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>CLIENT_JENKINS</key>
+          <value>${JENKINS_URL}</value>
+          <condition></condition>
+          <extendedCondition>false</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>PHOENIX_TOOL_PATH</key>
+          <value>${PHOENIX_TOOL_PATH_GUI}</value>
+          <condition>&apos;${PHOENIX_TOOL_PATH_GUI}&apos;!=&apos;&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>PROVISIONING_TOOL_PATH</key>
+          <value>${PROVISIONING_TOOL_PATH_GUI}</value>
+          <condition>&apos;${PROVISIONING_TOOL_PATH_GUI}&apos;!=&apos;&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+        <com.ericsson.becrux.communicator.nodesimulator.Parameters>
+          <key>TESTEXEC_TOOL_PATH</key>
+          <value>${TESTEXEC_TOOL_PATH_GUI}</value>
+          <condition>&apos;${TESTEXEC_TOOL_PATH_GUI}&apos;!=&apos;&apos;</condition>
+          <extendedCondition>true</extendedCondition>
+        </com.ericsson.becrux.communicator.nodesimulator.Parameters>
+      </parameters>
+      <jobId>0</jobId>
+    </com.ericsson.becrux.communicator.nodesimulator.ITRSenderBuildStep>
+    <com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <delayTime>3</delayTime>
+      <waitingTime>120</waitingTime>
+      <btfEventReceivedType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>STARTLOOP</string>
+          <string>WAITING</string>
+          <string>REJECT</string>
+          <string>RESTART</string>
+        </a>
+      </btfEventReceivedType>
+      <btfEventRejectType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>REJECT</string>
+          <string>WAITING</string>
+        </a>
+      </btfEventRejectType>
+      <eventDAOPath>/proj/ims_lu/cba_cde/iles_ci/dev_db/manageBTFEvents/fem036</eventDAOPath>
+      <queueName>BTFevents</queueName>
+      <instancePropertyName>WORKER_URL</instancePropertyName>
+    </com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+# Format SYNC_LOG_LINK=*/JOB_NAME/BUILD_NUMBER/console[Full]
+
+Green=&apos;\033[0;32m&apos;
+Reset=&apos;\033[0;0m&apos;
+
+echo -e &quot;\n\n\n$Green&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;#                          START SYNC LOG                        #&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;\n\n\n$Reset&quot;
+
+JAR_DIR=/proj/ims_lu/cba_cde/int_ci/deliveries/extra/jenkins-cli.jar
+#SYNC_LOG_LINK=https://fem023-eiffel021.rnd.ki.sw.ericsson.se:8443/jenkins/job/VISE0203/1/console
+SYNC_LOG_LINK=${WORKER_URL}
+SYNC_LOG_LINK=${SYNC_LOG_LINK%*/console*}
+condition=`echo $SYNC_LOG_LINK | grep job | grep view`
+if [ &quot;$condition&quot; == &quot;&quot; ]; then
+    FEM_URL=${SYNC_LOG_LINK%*/job*}
+else
+    FEM_URL=${SYNC_LOG_LINK%*/view*}
+fi
+LOG_BUILD_NUMBER=${SYNC_LOG_LINK##*/}
+SYNC_LOG_LINK=${SYNC_LOG_LINK%/*}
+LOG_JOB_NAME=${SYNC_LOG_LINK##*/}
+java -jar $JAR_DIR -s $FEM_URL console $LOG_JOB_NAME $LOG_BUILD_NUMBER -f
+
+echo -e &quot;\n\n\n$Green&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;#                            END SYNC LOG                        #&quot;
+echo -e &quot;##################################################################&quot;
+echo -e &quot;\n\n\n$Reset&quot;</command>
+    </hudson.tasks.Shell>
+    <com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <delayTime>3</delayTime>
+      <waitingTime>120</waitingTime>
+      <btfEventReceivedType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string>ENDLOOP</string>
+        </a>
+      </btfEventReceivedType>
+      <btfEventRejectType class="java.util.Arrays$ArrayList">
+        <a class="string-array">
+          <string></string>
+        </a>
+      </btfEventRejectType>
+      <eventDAOPath>/proj/ims_lu/cba_cde/iles_ci/dev_db/manageBTFEvents/fem036</eventDAOPath>
+      <queueName>BTFevents</queueName>
+      <instancePropertyName></instancePropertyName>
+    </com.ericsson.becrux.communicator.nodesimulator.BTFEventQueryBuildStep>
+  </builders>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.57.2">
+      <recipientList>$EMAIL_NOTIFICATION</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>default</contentType>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo></replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+    <com.ericsson.becrux.communicator.nodesimulator.MakeBadgePostBuildStep plugin="iles-communicator@R1A01-SNAPSHOT"/>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.5.0">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+  </buildWrappers>
+</project>

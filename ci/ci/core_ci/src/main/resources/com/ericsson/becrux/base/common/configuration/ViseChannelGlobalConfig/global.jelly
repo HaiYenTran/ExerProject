@@ -1,0 +1,45 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:section title="CI: Vise Channel Global Configuration" >
+
+           <f:entry title="Vise Channel DAO path">
+                <f:textbox field="viseDaoPath" />
+           </f:entry>
+
+           <f:entry title="VISE Channel Pools" >
+               <f:repeatable field="viseChannelPools" add="Add Pool" >
+                   <table>
+                       <f:entry title="Pool Name" >
+                           <f:textbox field="viseChannelPoolName" />
+                           <f:repeatable field="viseChannelName" add="Add Channel" >
+                               <table>
+                                   <f:entry title="Channel Name" >
+                                       <f:textbox field="name" />
+                                   </f:entry>
+                                   <f:entry title="TTCN IP Address" >
+                                       <f:textbox field="ipAddr" />
+                                   </f:entry>
+                                   <f:entry>
+                                    <div align="right">
+                                           <f:repeatableDeleteButton value="Delete" />
+                                    </div>
+                                   </f:entry>
+                               </table>
+                           </f:repeatable>
+                       </f:entry>
+                       <f:entry>
+                           <div align="right">
+                               <f:repeatableDeleteButton value="Delete" />
+                           </div>
+                       </f:entry>
+                   </table>
+               </f:repeatable>
+           </f:entry>
+
+    </f:section>
+
+</j:jelly>

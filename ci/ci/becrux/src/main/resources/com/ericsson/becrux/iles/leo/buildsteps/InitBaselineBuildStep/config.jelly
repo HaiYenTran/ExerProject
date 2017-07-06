@@ -1,0 +1,31 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="List Baseline" >
+        <f:repeatable field="listBaseline" add="Add Baseline" >
+            <table>
+                <f:entry title="Product Name" >
+                    <f:textbox field="productName" />
+                </f:entry>
+                <f:entry title="Product Version" >
+                    <f:textbox field="productVersion" />
+                </f:entry>
+                <f:entry title="Release ID" >
+                    <f:textbox field="releaseId" />
+                </f:entry>
+                <f:entry title="Description" >
+                    <f:textbox field="description" />
+                </f:entry>
+                <f:entry title="Signum" >
+                    <f:textbox field="signum" />
+                </f:entry>
+                <f:entry>
+                    <f:repeatableDeleteButton value="Remove Baseline" />
+                </f:entry>
+            </table>
+        </f:repeatable>
+    </f:entry>
+</j:jelly>

@@ -1,0 +1,21 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+	<f:entry title="Only receive events with specific tag" description="Default = *">
+		<f:textbox field="tag" />
+	</f:entry>
+
+    <f:optionalBlock name="customBindings" title="Use the custom Eiffel secondary bindings" checked="${instance.customBindings}" inline="true">
+
+            <f:entry title="Eiffel secondary bindings (one each line)">
+                <f:textarea field="secondaryBindings.bindingKey" />
+            </f:entry>
+        </f:optionalBlock>
+
+	<f:entry title="Event polling timeout (in milliseconds)" description="Default = 5000">
+	    <f:textbox field="timeout" />
+	</f:entry>
+</j:jelly>

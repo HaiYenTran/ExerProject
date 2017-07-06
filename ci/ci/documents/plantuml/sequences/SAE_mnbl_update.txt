@@ -1,0 +1,37 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+participant "Standalone\nEngine" as cie
+
+participant "ILES CI\nEngine" as iles
+
+box "SAE\nDB" #LightGrey
+    participant "Approved\nMNBL" as mnbl
+end box
+
+	iles -> iles : MNBL approval
+	iles -> cie : EBDE event
+	note left : Data in EBDE Event:\n\tbaselineName: IMS <version>\n\tconstistOf : <nodes and comonents>
+	cie -> mnbl : store MNBL versions
+	
+@enduml

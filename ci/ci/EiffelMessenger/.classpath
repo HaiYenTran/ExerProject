@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="Lib/eiffel-core-48.0.1.jar"/>
+	<classpathentry kind="lib" path="Lib/artifacts-40.0.2.jar"/>
+	<classpathentry kind="lib" path="Lib/customEvents-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Lib/messaging-40.0.2.jar"/>
+	<classpathentry kind="lib" path="Lib/rules-40.0.2.jar"/>
+	<classpathentry kind="lib" path="Lib/types-40.0.2.jar"/>
+	<classpathentry kind="lib" path="Lib/gson-2.7.jar"/>
+	<classpathentry kind="lib" path="Lib/gson-extras-0.1.0.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-cli-1.1.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="Lib/hamcrest-core.jar"/>
+	<classpathentry kind="lib" path="Lib/junit.jar"/>
+	<classpathentry kind="lib" path="Lib/rabbitmq-client-tests.jar"/>
+	<classpathentry kind="lib" path="Lib/rabbitmq-client.jar"/>
+	<classpathentry kind="lib" path="Lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="Lib/slf4j-jdk14-1.7.21.jar"/>
+	<classpathentry kind="lib" path="Lib/reflections-0.9.10.jar"/>
+	<classpathentry kind="lib" path="Lib/com.google.common_1.0.0.201004262004.jar"/>
+	<classpathentry kind="lib" path="Lib/guava-r05.jar"/>
+	<classpathentry kind="lib" path="Lib/javassist-3.12.1.GA.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

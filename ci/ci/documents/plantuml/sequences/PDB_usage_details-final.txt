@@ -1,0 +1,41 @@
+@startuml
+skinparam handwritten true
+autonumber
+
+title PDB config handling
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+actor "CI Engine" as prod
+
+box "phoenix"
+    participant phoenix
+end box
+
+box "PDB"
+    participant "MTAS\nref. conf" as mrc
+    participant "VISE\nSSL" as ssl
+end box
+
+    prod -> mrc : get reference MTAS configuration
+    prod -> ssl : get VISE SSL
+    prod -> phoenix: Install MTAS using provided SSL
+    prod -> phoenix : Configure MTAS using provided ref. conf.
+
+@enduml

@@ -1,0 +1,21 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+	<f:entry title="Use real Test Execution" field="realTestExec">
+		<f:checkbox />
+	</f:entry>
+    <f:entry title="Gateway Server" description="userid@gateway.server">
+        <f:textbox field="gatewayServer" />
+    </f:entry>
+    <f:entry title="Use sandbox PDB instance">
+        <f:checkbox field="useSandboxPdbInstance" />
+    </f:entry>
+
+    <f:entry title="Upload logs to Insight">
+        <f:checkbox field="uploadToInsight" />
+    </f:entry>
+
+</j:jelly>

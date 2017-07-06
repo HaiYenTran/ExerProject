@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.ericsson.duraci.configuration.EiffelJenkinsGlobalConfiguration_-EiffelJenkinsGlobalConfigurationDescriptor plugin="eiffel-core@44.0.5">
+  <arms class="empty-map"/>
+  <messageBus>
+    <hostName>mb001-eiffel021.rnd.ki.sw.ericsson.se</hostName>
+    <port>5672</port>
+    <exchangeName>mb001-eiffel021_xthdidi</exchangeName>
+    <componentName>fem083-eiffel021</componentName>
+    <protocol>amqp</protocol>
+    <createExchangeIfNotExisting>true</createExchangeIfNotExisting>
+    <credentials>
+      <name>guest</name>
+      <password>guest</password>
+    </credentials>
+  </messageBus>
+  <domainId>eiffel021.seki.fem083</domainId>
+  <msQueue>
+    <queueLength>100</queueLength>
+  </msQueue>
+  <erRestUrl></erRestUrl>
+  <esRestUrl></esRestUrl>
+  <esTransportUrl></esTransportUrl>
+  <esEventIndexes></esEventIndexes>
+  <esArtifactsIndexes></esArtifactsIndexes>
+  <esBaselinesIndexes></esBaselinesIndexes>
+  <jarFilePaths></jarFilePaths>
+  <globalImports></globalImports>
+  <bypassIO>false</bypassIO>
+</com.ericsson.duraci.configuration.EiffelJenkinsGlobalConfiguration_-EiffelJenkinsGlobalConfigurationDescriptor>

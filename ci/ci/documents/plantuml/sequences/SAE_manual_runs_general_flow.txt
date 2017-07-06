@@ -1,0 +1,51 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+actor "INT tester" as tester
+participant "SAE" as cie
+
+participant "/proj storage" as proj
+
+box "CI\nDB" #LightGrey
+    participant assignments
+end box
+
+participant "VISE channel" as vise
+participant Insight as ins
+
+participant Leo as leo
+
+	tester -> cie : choose the activity via the GUI
+	cie -> cie : validate input
+	cie -> cie : Eiffel event
+	cie -> assignments : check if channel is assigned to this user
+	alt if channel is busy
+	cie -> cie : queue the request
+	else else
+	cie -> proj : use binaries and cfgs
+	cie -> vise : perform installation and/or other tasks
+	end
+	cie -> ins : push logs&traces
+	cie -> leo : report
+	
+@enduml

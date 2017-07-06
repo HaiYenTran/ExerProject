@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+	This plugin contains the build steps necessary to perform the IMS Network Feature Tests. 
+</div>

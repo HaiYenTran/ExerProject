@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+body, table, form, input, td, th, p, textarea, select {
+
+}
+
+#main-table {
+
+}
+
+#jenkins-head-icon
+{
+/*    display: none;*/
+}
+
+#jenkins-name-icon
+{
+    display: none;
+}
+input[value="ILES_TOOLS"] + input {
+        background-color: #7FFF00;
+        color: #747;
+}
+
+input[value="INSTALLATION"] + input {
+        background-color: #fdf;
+        color: #747;
+}
+
+input[value^="MTAS"] + select, input[value^="MTAS_"] + input, #div_FORCE_MTAS_INSTALLATION, #div_FORCE_MTASV_INSTALLATION {
+        background-color: #fff3ff;
+        color: #707;
+}
+
+input[value^="CSCF"] + select, input[value^="CSCF_"] + input, #div_FORCE_CSCF_INSTALLATION, #div_FORCE_CSCFV_INSTALLATION {
+        background-color: #eaffff;
+        color: #047;
+}
+
+input[value^="IBCF"] + select, input[value^="IBCF_"] + input, #div_FORCE_IBCF_INSTALLATION, #div_FORCE_IBCFV_INSTALLATION {
+        background-color: #e5e5e5;
+        color: #333;
+}
+
+input[value^="PCSCF"] + select, input[value^="PCSCF_"] + input, #div_FORCE_PCSCF_INSTALLATION, #div_FORCE_PCSCFV_INSTALLATION {
+        background-color: #eeffd9;
+        color: #271;
+}
+
+input[value^="AGW"] + select, input[value^="AGW_"] + input, #div_FORCE_AGW_INSTALLATION, #div_FORCE_AGW_INSTALLATION {
+        background-color: #dffeee;
+        color: #271;
+}
+
+input[value^="TRGW"] + select, input[value^="TRGW_"] + input, #div_FORCE_TRGW_INSTALLATION, #div_FORCE_TRGW_INSTALLATION {
+        background-color: #aeffff;
+        color: #271;
+}
+
+input[value="PROVISIONING"] + input {
+        background-color: #ffc0cb;
+        color: #080;
+}
+
+input[value="TESTEXEC"] + input {
+        background-color: #6495ED;
+        color: #73d;
+}
+
+input[value="INT_VERSION"] + select {
+        background-color: #eeeeff;
+        color: #73d;
+}
+
+input[value="ARTIFACT"] + input {
+        background-color: #eeeeff;
+        color: #73d;
+}
+
+input[value="TESTCASE_TAGS"] + input {
+        background-color: #eeeeff;
+        color: #73d;
+}
+
+input[value="STORE_PASSED_PCAP"] + input {
+        background-color: #eeeeff;
+        color: #73d;
+}
+
+input[value="JOB_DESCRIPTION"] + input {
+        background-color: #FFFF00;
+        color: #73d;
+}
+
+input[value="EMAIL_NOTIFICATION"] + input {
+        width: 600px;
+        background-color: #fdf;
+        color: #747;
+}
+
+/* Checkbox fields:
+*/
+#div_HACK                    {  background-color: #fdd; }
+#div_RUN_PREPROVISIONING     {  background-color: #fdf; }
+#div_AUTO_RERUN              {  background-color: #eaffea; }
+#div_RUN_TESTSUITE           {  background-color: #eaffea; }
+
+.div_checkbox {
+        display: block;
+        width: 300px;
+        height: 24px;
+        padding: 2px;
+        text-align: center;
+        vertical-align: middle;
+        border:solid 1px #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.div_checkbox input {
+        width: 7px;
+        height: 7px;
+}
+
+/* background of a row on hover
+*/
+table.parameters > tbody:hover {
+  background-color: #f6f6ff;
+}
+
+/* Start change textarea width */
+table.parameters > tbody > tr > td.setting-main > div > textarea.setting-input{
+    width:600px;
+}
+table.parameters > tbody > tr > td.setting-main > div > div.textarea-handle{
+    width:600px;
+}
+/* End change textarea width */
+
+td.setting-main > div > input, select {
+
+        padding: 2px;
+        font-size:1.3em;
+        font-family: Courier New, monospace;
+        color: #22e;
+        border:solid 1px #ccc;
+        width:600px;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+td.setting-name {
+        width: 210px;
+        min-width: 205px;
+        max-width: 220px;
+        padding-right: 20px;
+}
+
+.setting-description {
+        height: 2em;
+        color: #666;
+}
+
+.parameters #yui-gen1 {
+  margin-left: 170px;
+}
+
+.parameters #yui-gen1-button {
+        -moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+        box-shadow:inset 0px 1px 0px 0px #bee2f9;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+        background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+        background-color:#63b8ee;
+        -webkit-border-top-left-radius:0px;
+        -moz-border-radius-topleft:0px;
+        border-top-left-radius:0px;
+        -webkit-border-top-right-radius:0px;
+        -moz-border-radius-topright:0px;
+        border-top-right-radius:0px;
+        -webkit-border-bottom-right-radius:0px;
+        -moz-border-radius-bottomright:0px;
+        border-bottom-right-radius:0px;
+        -webkit-border-bottom-left-radius:0px;
+        -moz-border-radius-bottomleft:0px;
+        border-bottom-left-radius:0px;
+        text-indent:0;
+        border:1px solid #3866a3;
+        display:inline-block;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        font-style:normal;
+        height:38px;
+        line-height:38px;
+        width:131px;
+        text-decoration:none;
+        text-align:center;
+        text-shadow:1px 1px 0px #7cacde;
+}
+
+.parameters #yui-gen1-button:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+        background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee');
+        background-color:#468ccf;
+}
+
+.parameters #yui-gen1-button:active {
+        position:relative;
+        top:1px;
+}
+
+
+/* Table 1 Style */
+table.table1{
+    width: 90%;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:4px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#9DD929;
+    border:1px solid #93CE37;
+    border-right:3px solid #9ED929;
+    padding:0px 10px;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, rgb(158,217,41)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(123,192,67))
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        rgb(158,217,41) 2%,
+        rgb(139,198,66) 51%,
+        rgb(123,192,67) 87%
+        );
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.table1 tfoot td{
+    color: #9CD009;
+    font-size:32px;
+    text-align:center;
+    padding:4px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.table1 tfoot th{
+    color:#666;
+}
+.table1 tbody td{
+    padding:2px 2px 2px 12px;
+    text-align:left;
+    vertical-align:middle;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.col_small {
+        width: 6%;
+}
+.col_big{
+        width: 44%;
+}
+
+/* Lab status table styles:
+*/
+.lab-status-frame {
+        /*width: 620px;*/
+        width: 100%;
+        height: 80px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        border: 0px;
+}
+.lab-status-body {
+        padding: 0px;
+        margin: 0px;
+}
+#lab-status-table {
+        border: 0px;
+        border-spacing: 0px;
+        border-collapse: separate;
+        width: 90%;
+        font-family: Courier, Verdana;
+}
+#lab-status-table tr:hover{
+        background-color: #eef;
+}
+.lab-status-header-up {
+        padding: 0 0 0 15px;
+        background-color: #ddf;
+        text-decoration: bold;
+        text-align: left;
+        border: 0px;
+        border-bottom: 1px dotted #bbf;
+        height: 12px;
+        font-size: 12px;
+        overflow: hidden;
+        color: blue;
+}
+.lab-status-header-left {
+        width: 80px;
+        padding: 0 0 0 15px;
+        text-decoration: bold;
+        text-align: left;
+        border: 0px;
+        border-bottom: 1px dotted #bbf;
+        height: 12px;
+        font-size: 12px;
+        overflow: hidden;
+        color: blue;
+}
+.lab-status-cell {
+        padding: 0 0 0 5px;
+        border: 0px;
+        border-bottom: 1px dotted #bbf;
+        height: 12px;
+        font-size: 12px;
+        overflow: blue;
+}
+
+//Lab Description
+.lab-description-frame {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        border: 0px;
+        border-spacing: 0px;
+
+}
+
+#lab-description-frame {
+        width: 100%;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        border: 0px;
+        font-weight:bolder;
+        border-spacing: 0px;
+        border-collapse: separate;
+
+}
+
+.lab-description-body {
+        padding: 0px;
+        margin: 0px;
+    height: 90%;
+    border: 0px;
+}
+
+.lab-description-body div {
+        font-family: Courier, Verdana;
+        font-weight:bold;
+}
+
+.build-row.no-wrap td {
+/* useful when JOB_DRI parameter is used as build name instead of build description:
+  white-space: pre-line;
+*/
+}
+
+/*Build History hide build name.
+*/
+#buildHistory .build-name {
+        width: 68px;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+}
+/*Main page hide build name.
+*/
+#executors .model-link.inside {
+        width: 150px;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+}
+
+/* Build History: bring Cancel (X) button to the front so it's not overlapped with other content
+*/
+a.stop-button-link {
+  position: relative;
+  z-index: 100;
+}
+a.stop-button-link:hover {
+  background-color: orange;
+}
+
+/* Build history colors:
+*/
+#buildHistory .desc {
+        opacity: 1;
+}
+
+td.build-row-cell div.build-details a.build-link {
+
+}
+
+td.build-row-cell div.zws-inserted {
+        color: purple;
+}
+
+/* Maintenance window iframe:
+*/
+.maintenance-window-body {
+        padding: 0px;
+        margin: 0px;
+
+        background-color: red;
+        color: white;
+}

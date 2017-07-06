@@ -1,0 +1,61 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+
+
+		<f:optionalBlock name="useCustomParameters" title="Use custom phoenix parameters" checked="${instance.useCustomParameters}" inline="true">
+		  	<f:entry title="Prepare remote ssh" description="set to true if remote ssh should be enabled on target">
+				<f:textbox field="prepare_remote_ssh" />
+			</f:entry>
+			<f:entry title="Ova name" description="capp instance name">
+				<f:textbox field="ova_name" />
+			</f:entry>
+			<f:entry title="Vnf path" description="Path to local directory on Atlas for downloading the VNF package">
+				<f:textbox field="vnf_path" />
+			</f:entry>
+			<f:entry title="Atlas IP address">
+				<f:textbox field="atlas_ip" />
+			</f:entry>
+		    <f:entry title="Atlas user" >
+				<f:textbox field="atlas_user" />
+			</f:entry>
+			<f:entry title="Atlas password" >
+				<f:password field="atlas_pw" />
+			</f:entry>
+			<f:entry title="Node IP" description="Node IP for Netconf uploading of SSLs">
+				<f:textbox field="node_ip" />
+			</f:entry>
+			<f:entry title="Node user"  description="Node user name for Netconf">
+				<f:textbox field="node_user" />
+			</f:entry>
+			<f:entry title="Node password" description="Node password for Netconf">
+				<f:password field="node_password" />
+			</f:entry>
+			<f:entry title="PDB tools pkg" description="Relative path to file of the zip archive containing the PDB tools SW inside PHOENIX">
+				<f:textbox field="pdb_tools_pkg" />
+			</f:entry>
+			<f:entry title="PDB server host" description="The PDB server host or ip address">
+				<f:textbox field="pdb_server_host" />
+			</f:entry>
+			<f:entry title="PDB server port" description="The PDB server port">
+				<f:textbox field="pdb_server_port" />
+			</f:entry>
+			<f:entry title="PDB user" description="The PDB user used when logging in to the PDB CLI">
+				<f:textbox field="pdb_user" />
+			</f:entry>
+			<f:entry title="PDB password" description="The password for the pdb_user used when logging in to the PDB CLI">
+				<f:password field="pdb_password" />
+			</f:entry>
+			<f:entry title="number of samples" description="The max number of samples during healthcheck">
+				<f:textbox field="nr_of_samples" />
+			</f:entry>
+	    </f:optionalBlock>
+
+        <f:entry title="Execution script">
+            <f:textarea  field="phoenixExecutionScript" default="default"/>
+        </f:entry>
+
+</j:jelly>

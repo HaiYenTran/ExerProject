@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" 	xmlns:st="jelly:stapler" 
+		 xmlns:d="jelly:define" xmlns:l="/lib/layout" 
+		 xmlns:t="/lib/hudson" 	xmlns:f="/lib/form"
+		 xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+  <f:entry title="Node Type" field="nodeType" description="Enter your Node Type, ie MTAS, CSCF, IBCF, P-CSCF, INT,...">
+    <f:textbox />
+  </f:entry>
+  <f:entry title="Binding Key" field="bindingKey" description="Enter binding key to get messages from ILES CI">
+    <f:textbox />
+  </f:entry>
+</j:jelly>

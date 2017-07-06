@@ -1,0 +1,34 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" 	xmlns:st="jelly:stapler"
+    xmlns:d="jelly:define" xmlns:l="/lib/layout"
+    xmlns:t="/lib/hudson" 	xmlns:f="/lib/form"
+    xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="Tag" field="tag" description="Enter tag name to create message queue">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Binding Keys" description="Enter binding key to get messages">
+        <f:repeatable field="bindingKeys" add="Add binding" >
+        <table>
+            <f:entry title="Binding key">
+                <f:textbox field="bindingKey" />
+            </f:entry>
+            <f:entry title="Description">
+                <f:textbox field="description" />
+            </f:entry>
+            <f:entry>
+                <f:repeatableDeleteButton value="Remove binding" />
+            </f:entry>
+        </table>
+        </f:repeatable>
+    </f:entry>
+
+    <f:entry title="Event DAO" field="eventDao" description="Enter the path to store BTF event">
+        <f:textbox />
+    </f:entry>
+
+    <f:entry title="Event Queue" field="eventQueue" description="Enter the queue name to store BTF event">
+        <f:textbox />
+    </f:entry>
+</j:jelly>

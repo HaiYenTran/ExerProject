@@ -1,0 +1,47 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+title MTAS installation on VISE 201 - final version
+
+actor installer as ci
+
+participant "phoenix delivery" as pho
+
+box "Phoenix\nfiles" #LightGrey
+    participant "jars" as jars
+end box
+
+participant PDB as pdb
+    alt if configs are FROZen
+	    ci -> pho : take clean delivery
+		note left : Passed configs:\nBase config: /MPVL MTASv 1.4 MOBILE\nVolte config: /VoLTE (vMTAS) Delta Parameter List\nVolte Extended config: /ILES Extended VoLTE Delta (vMTAS)\nVISE channel : 201\nNode type: MTAS\nDeliverable: MTAS_R16B.tar.gz
+		ci -> pho : run phx(MTAS_0201)
+		phx->phx: link /etc to MTAS_0201
+	    pho -> pdb : download MVPL, Volte, Volte extd.
+	    pdb --> jars : store
+		pho -> pho : load config on MTAS node
+	else else
+		ci -> ci : stop
+	end
+	
+@enduml

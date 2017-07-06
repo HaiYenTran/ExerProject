@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Built-By: TRONG.LE
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_111
+Extension-Name: iles-communicator
+Specification-Title: TODO
+Implementation-Title: iles-communicator
+Implementation-Version: R1A01-SNAPSHOT
+Group-Id: com.ericsson
+Short-Name: iles-communicator
+Long-Name: ILES-Communicator
+Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
+Plugin-Version: R1A01-SNAPSHOT (private-06/23/2017 08:41-TRONG.LE)
+Hudson-Version: 2.3
+Jenkins-Version: 2.3
+Plugin-Dependencies: eiffel-core:44.0.5
+Plugin-Developers: 
+

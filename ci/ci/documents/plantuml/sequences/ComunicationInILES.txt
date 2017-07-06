@@ -1,0 +1,59 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+autonumber
+
+skinparam sequence {
+	ArrowColor DeepSkyBlue
+	ActorBorderColor DeepSkyBlue
+	LifeLineBorderColor blue
+	LifeLineBackgroundColor #A9DCDF
+	
+	ParticipantBorderColor DeepSkyBlue
+	ParticipantBackgroundColor DodgerBlue
+	ParticipantFontName Impact
+	ParticipantFontSize 17
+	ParticipantFontColor #A9DCDF
+	
+	ActorBackgroundColor aqua
+	ActorFontColor DeepSkyBlue
+	ActorFontSize 17
+	ActorFontName Aapex
+}
+
+box "Our System" #LightYellow
+	participant "Target" as c
+end box
+
+box "Eiffel Exchange" #LightBlue
+	participant "Exchange" as eiffel
+end box
+
+box "Nodes" #LightGrey
+	participant "Jenkins MTAS" as mtas
+	participant "Leo Eiffel" as leo
+end box
+
+
+
+Note left of c: Hostname:\t\tamqps://mb001-eiffel021.rnd.ki.sw.ericsson.se:5671\nExchange:\t\tmb001-eiffel021\nComponent:\tfem001-eiffel021\nDomain:\t\teiffel021.seki.fem001\nTrigger:\t\texperimental.generic.*.eiffel021.seki.*\nReciver:\t\texperimental.generic.*.eiffel021.seki.fem001\n\t\t\texperimental.generic.iles.eiffel021.seki.fem004
+Note right of mtas: Hostname:\t\tamqps://mb001-eiffel021.rnd.ki.sw.ericsson.se:5671\nExchange:\t\tmb001-eiffel021\nComponent:\tfem004-eiffel021\nDomain:\t\teiffel021.seki.fem004\nTrigger/Reciver\texperimental.generic.mtas.eiffel021.seki.fem001
+Note right of leo: Hostname:\t\tamqps://mb001-eiffel021.rnd.ki.sw.ericsson.se:5671\nExchange:\t\tmb001-eiffel021\nComponent:\tfemleo-eiffel021\nDomain:\t\teiffel021.seki.fem001\nTrigger/Reciver\texperimental.generic.leo.eiffel021.seki.fem001
+
+group COMUNICATION MTAS
+	mtas->eiffel : Sent (experimental.generic.iles.eifel021.seki.fem004)
+	eiffel->c: Trigger (experimental.generic.iles.eifel021.seki.fem004)
+	c->eiffel : Response (experimental.generic.mtas.eiffel021.seki.fem001)
+	eiffel->c: Trigger (experimental.generic.mtas.eiffel021.seki.fem001)
+	eiffel->mtas: Trigger (experimental.generic.mtas.eiffel021.seki.fem001)
+end
+
+group LEO COMUNICATION
+	leo -> eiffel : Voting (experimental.generic.iles.eiffel021.seki.fem001)
+	eiffel -> c : Trigger (experimental.generic.iles.eiffel021.seki.fem001)
+	c -> eiffel : Response (experimental.generic.leo.eiffel021.seki.fem001)
+	eiffel -> c : Trigger (experimental.generic.leo.eiffel021.seki.fem001)
+	eiffel->leo : Recive (experimental.generic.leo.eiffel021.seki.fem001)
+end
+
+@enduml 

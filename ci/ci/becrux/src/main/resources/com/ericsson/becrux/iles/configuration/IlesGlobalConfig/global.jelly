@@ -1,0 +1,38 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:section title="ILES CI Configurations" >
+        <f:entry title="ILES guardians e-mail addresses" description="Define the contact information for ILES guardians">
+            <f:repeatable field="ilesGuardians" add="Add guardian" >
+                <table>
+                    <f:entry title="E-mail address" >
+                        <f:textbox field="mail" />
+                    </f:entry>
+                    <f:entry title="Signum" >
+                        <f:textbox field="signum" />
+                    </f:entry>
+                    <f:entry>
+                        <f:repeatableDeleteButton value="Remove guardian" />
+                    </f:entry>
+                </table>
+            </f:repeatable>
+        </f:entry>
+
+        <f:entry title="ILES Tools/Script Directory path: " description="Contain all Iles tools like Phoenix/Provisioning/TestExec">
+            <f:textbox field="ilesDirPath"/>
+        </f:entry>
+
+        <f:entry title="Component DAO path :" description="Contain all component versions">
+            <f:textbox field="componentDaoPath"/>
+        </f:entry>
+
+        <f:entry title="Event DAO path :" description="Contain all event and queue">
+            <f:textbox field="eventDaoPath"/>
+        </f:entry>
+
+    </f:section>
+
+</j:jelly>

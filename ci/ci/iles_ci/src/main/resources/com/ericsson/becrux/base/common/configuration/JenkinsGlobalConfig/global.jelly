@@ -1,0 +1,65 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+	<f:section title="Core CI Engine Configuration">
+		<f:entry title="Leo URL" >
+            <f:textbox field="leoUrl" />
+        </f:entry>
+        <f:entry title="Leo routing key" >
+        	<f:textbox field="leoRoutingKey" />
+        </f:entry>
+        <f:entry title="Timeout on Voting [hours]" >
+            <f:textbox field="timeout" />
+        </f:entry>
+        <f:entry title="Debug Mode" >
+        	<f:checkbox field="debugMode" />
+        </f:entry>
+
+		<f:entry title="Guardians e-mail addresses" >
+			<f:repeatable field="nodeGuardians" add="Add guardian" >
+				<table>
+					<f:entry title="E-mail address" >
+						<f:textbox field="mail" />
+					</f:entry>
+					<f:entry title="Signum" >
+						<f:textbox field="signum" />
+					</f:entry>
+					<f:entry>
+						<f:repeatableDeleteButton value="Remove guardian" />
+					</f:entry>
+				</table>
+			</f:repeatable>
+		</f:entry>
+
+	</f:section>
+
+	<f:section title="CI: Eiffel secondary bindings">
+		<f:entry title="Secondary bindings" >
+			<f:repeatable field="secondaryBindings" add="Add binding" >
+				<table>
+					<f:entry title="Binding key">
+						<f:textbox field="bindingKey" />
+					</f:entry>
+					<f:entry title="Description">
+						<f:textbox field="description" />
+					</f:entry>
+					<f:entry>
+						<f:repeatableDeleteButton value="Remove binding" />
+					</f:entry>
+				</table>
+			</f:repeatable>
+		</f:entry>
+	</f:section>
+
+	<f:section title="CI: Provisioning configuration">
+		<f:entry title="Netconf">
+			<f:checkbox field="netconf" />
+		</f:entry>
+		<f:entry title="SSL file">
+			<f:textbox field="sslFile" />
+		</f:entry>
+	</f:section>
+</j:jelly>

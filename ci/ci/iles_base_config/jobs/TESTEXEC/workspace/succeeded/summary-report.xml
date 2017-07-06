@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" skipped="0" tests="22" time="0.0">
+	<testsuite errors="0" failures="1" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_GRUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_GRUS/pool_ci-PYEXEC_GRUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/GRUS"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5335.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_JOBASSISTANT-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_JOBASSISTANT/pool_ci-PYEXEC_JOBASSISTANT-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/JOBASSISTANT"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5352.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_DEPTREE-esekiws5352.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_DEPTREE/pool_ci-PYEXEC_DEPTREE-esekiws5352.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/DEPTREE"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekilx5823.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_JPT-esekilx5823.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="2" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_JPT/pool_ci-PYEXEC_JPT-esekilx5823.rnd.ki.sw.ericsson.se-20160808-162426.log" name="jptconfig"/>
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_JPT/pool_ci-PYEXEC_JPT-esekilx5823.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/JPT"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5263.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_DEPLOY-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_DEPLOY/pool_ci-PYEXEC_DEPLOY-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/DEPLOY"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5510.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_TEST-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_TEST/pool_ci-TES_FT_LYNX_TEST-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162426.log" name="TES_FT/LYNX_TEST"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5511.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_RTDP_TEST-esekiws5511.rnd.ki.sw.ericsson.se-20160808-162426" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:26">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_RTDP_TEST/pool_ci-PYEXEC_RTDP_TEST-esekiws5511.rnd.ki.sw.ericsson.se-20160808-162426.log" name="PYEXEC/RTDP_TEST"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5510.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_NSTA4EXEC-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162428" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:28">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_NSTA4EXEC/pool_ci-PYEXEC_NSTA4EXEC-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162428.log" name="PYEXEC/NSTA4EXEC"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5335.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_JUNIT-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162432" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:32">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_JUNIT/pool_ci-PYEXEC_JUNIT-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162432.log" name="PYEXEC/JUNIT"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5335.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_JDIP-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162436" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:36">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_JDIP/pool_ci-PYEXEC_JDIP-esekiws5335.rnd.ki.sw.ericsson.se-20160808-162436.log" name="PYEXEC/JDIP"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_GRUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162440" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:40">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_GRUS/pool_ci-TES_FT_GRUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162440.log" name="TES_FT/GRUS"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_SCORPIUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162443" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:24:43">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_SCORPIUS/pool_ci-PYEXEC_SCORPIUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162443.log" name="PYEXEC/SCORPIUS"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5263.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_DEPLOY-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162521" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:25:21">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_DEPLOY/pool_ci-TES_FT_LYNX_DEPLOY-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162521.log" name="TES_FT/LYNX_DEPLOY"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5263.rnd.ki.sw.ericsson.se" name="pool_ci-PYEXEC_TTCN3-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162524" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:25:24">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/PYEXEC_TTCN3/pool_ci-PYEXEC_TTCN3-esekiws5263.rnd.ki.sw.ericsson.se-20160808-162524.log" name="PYEXEC/TTCN3"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5510.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_NSTA4-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162616" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:26:16">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_NSTA4/pool_ci-TES_FT_LYNX_NSTA4-esekiws5510.rnd.ki.sw.ericsson.se-20160808-162616.log" name="TES_FT/LYNX_NSTA4"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5352.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_AQUARIUS-esekiws5352.rnd.ki.sw.ericsson.se-20160808-162704" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:27:04">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_AQUARIUS/pool_ci-TES_FT_AQUARIUS-esekiws5352.rnd.ki.sw.ericsson.se-20160808-162704.log" name="TES_FT/AQUARIUS"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_SCORPIUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162707" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:27:07">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_SCORPIUS/pool_ci-TES_FT_SCORPIUS-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162707.log" name="TES_FT/SCORPIUS"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekiws5330.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_CI-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162831" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:28:31">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_CI/pool_ci-TES_FT_LYNX_CI-esekiws5330.rnd.ki.sw.ericsson.se-20160808-162831.log" name="TES_FT/LYNX_CI"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekilx5823.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_JPT-esekilx5823.rnd.ki.sw.ericsson.se-20160808-163109" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:31:09">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_JPT/pool_ci-TES_FT_LYNX_JPT-esekilx5823.rnd.ki.sw.ericsson.se-20160808-163109.log" name="TES_FT/LYNX_JPT"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekilx5823.rnd.ki.sw.ericsson.se" name="pool_ci-TES_FT_LYNX_TTCN3-esekilx5823.rnd.ki.sw.ericsson.se-20160808-164034" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:40:34">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TES_FT_LYNX_TTCN3/pool_ci-TES_FT_LYNX_TTCN3-esekilx5823.rnd.ki.sw.ericsson.se-20160808-164034.log" name="TES_FT/LYNX_TTCN3"/>
+	</testsuite>
+	<testsuite errors="0" failures="0" hostname="esekilx5823.rnd.ki.sw.ericsson.se" name="pool_ci-TEC_FT_CDE-esekilx5823.rnd.ki.sw.ericsson.se-20160808-164046" skipped="0" tests="1" time="0.0" timestamp="2016-08-08T16:40:46">
+		<testcase log="https://cde-jenkins.rnd.ki.sw.ericsson.se//job/Galaxy_CC_ALL/ws/galaxy_wp003_ci_it1.160808040200/ft/logs/ise/TEC_FT_CDE/pool_ci-TEC_FT_CDE-esekilx5823.rnd.ki.sw.ericsson.se-20160808-164046.log" name="TEC_FT/CDE"/>
+	</testsuite>
+</testsuites>

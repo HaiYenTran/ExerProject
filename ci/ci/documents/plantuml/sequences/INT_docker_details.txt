@@ -1,0 +1,46 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+box "IMS node"
+    participant "CI" as testers
+end box
+
+actor "Production CI" as prod
+
+participant "docker registry" as repo
+
+participant "TTCN Exec\nmachine" as ttcn
+
+    testers -> prod : ITR
+    prod -> prod: Install node
+    prod -> prod : Provision
+    prod -> repo : Pull image
+    prod -> ttcn : Configure the docker image for specific VISE channel
+	prod -> ttcn : Create container
+	prod -> ttcn : Start container
+    prod -> ttcn : Pass the test specific configs
+	prod -> ttcn : Run the test
+	prod -> ttcn : Download the logs
+	
+@enduml

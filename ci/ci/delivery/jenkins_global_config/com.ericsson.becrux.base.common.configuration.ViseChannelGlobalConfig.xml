@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.ericsson.becrux.base.common.configuration.ViseChannelGlobalConfig_-DescriptorImpl plugin="becrux-iles@1.0-SNAPSHOT">
+  <viseChannelPools>
+    <com.ericsson.becrux.base.common.configuration.ViseChannelPool>
+      <viseChannelPoolName>pool1</viseChannelPoolName>
+      <viseChannelName>
+        <com.ericsson.becrux.base.common.configuration.ViseChannelName>
+          <name>201</name>
+          <ipAddr>10.50.194.130</ipAddr>
+        </com.ericsson.becrux.base.common.configuration.ViseChannelName>
+      </viseChannelName>
+    </com.ericsson.becrux.base.common.configuration.ViseChannelPool>
+  </viseChannelPools>
+</com.ericsson.becrux.base.common.configuration.ViseChannelGlobalConfig_-DescriptorImpl>

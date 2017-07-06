@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+target/
+work/
+build/*
+/bin/
+.idea/
+work/plugins/*
+becrux.iml

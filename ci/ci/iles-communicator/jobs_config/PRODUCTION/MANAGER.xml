@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.ericsson.duraci.rule.triggering.RuleTrigger plugin="eiffel-core@44.0.5">
+      <spec></spec>
+      <bindingKey>experimental.generic.*.eiffel021.seki.fem037</bindingKey>
+      <ruleSnippets>
+        <com.ericsson.duraci.rule.snippet.TextSnippetForRuleTrigger>
+          <rules>// For simple rules just consisting of one pattern it is sufficient with a short timeout to expire for the facts.
+// For more complex cases this must be increased, see Managing Knowledgebase in:
+// https://eiffel.lmera.ericsson.se/com.ericsson.duraci/eiffel-core/usage/rule-triggering.html
+declare EiffelMessage
+      @role( event )
+      @expires( 1m )
+end
+
+declare EiffelEvent
+      @role( event )
+      @expires( 1m )
+end
+
+rule &quot;Trigger&quot;
+    when
+        m : EiffelMessage(eventType == &quot;EiffelGenericEvent&quot;)
+    then
+        log.info(&quot;Received event &quot; + m.getEventId() + &quot;!&quot;);
+
+        // To prevent unexpected behaviour, see Accessors in:
+        // https://eiffel.lmera.ericsson.se/com.ericsson.duraci/eiffel-core/usage/rule-triggering.html
+        queue.wipe();
+        queue.unique(m);
+end</rules>
+        </com.ericsson.duraci.rule.snippet.TextSnippetForRuleTrigger>
+      </ruleSnippets>
+      <persistent>false</persistent>
+      <temporalResolution>1000</temporalResolution>
+      <keepQueue>false</keepQueue>
+      <jarFilePaths>
+        <jarFilePaths></jarFilePaths>
+      </jarFilePaths>
+    </com.ericsson.duraci.rule.triggering.RuleTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.ericsson.becrux.communicator.nodesimulator.ManageBTFBuildStep plugin="iles-communicator@R1A01-SNAPSHOT">
+      <tag>fem035</tag>
+      <bindingKeys>
+        <com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+          <bindingKey>experimental.generic.*.eiffel021.seki.fem037</bindingKey>
+          <description>Listen Events from Fem037</description>
+        </com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+      </bindingKeys>
+      <eventDao>/proj/ims_lu/cba_cde/iles_ci/dev_db/manageBTFEvents/fem035</eventDao>
+      <eventQueue>BTFEvents</eventQueue>
+    </com.ericsson.becrux.communicator.nodesimulator.ManageBTFBuildStep>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

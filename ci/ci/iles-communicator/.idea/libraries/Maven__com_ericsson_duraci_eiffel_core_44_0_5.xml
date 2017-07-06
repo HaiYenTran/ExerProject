@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ericsson.duraci:eiffel-core:44.0.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ericsson/duraci/eiffel-core/44.0.5/eiffel-core-44.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ericsson/duraci/eiffel-core/44.0.5/eiffel-core-44.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ericsson/duraci/eiffel-core/44.0.5/eiffel-core-44.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.ericsson.becrux.iles.configuration.IlesGlobalConfig_-DescriptorImpl plugin="becrux-iles@1.0-SNAPSHOT">
+  <directory>
+    <baseDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new</baseDir>
+    <deliveriesDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries</deliveriesDir>
+    <dbDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/db</dbDir>
+    <testExecDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/intX</testExecDir>
+    <testExecJar>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/intX/LATEST</testExecJar>
+    <phoenixDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/phoenix</phoenixDir>
+    <phoenixLocation>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/phoenix/LATEST</phoenixLocation>
+    <phoenixScript>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/phoenix/LATEST/bin/phoenix</phoenixScript>
+    <provisioningDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/provisioning</provisioningDir>
+    <provisioningScript>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/deliveries/provisioning/LATEST/provision</provisioningScript>
+    <dao class="com.ericsson.becrux.base.common.dao.filedb.JsonCommonDaoImpl">
+      <eventFactory class="com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.eiffel.events.Event</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>BaseEventImpl</string>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+              <string>BaseEventImpl</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.eiffel.events.Event</clazz>
+        <registeredClasses>
+          <entry>
+            <string>BaseEventImpl</string>
+            <java-class>com.ericsson.becrux.base.common.eiffel.events.impl.BaseEventImpl</java-class>
+          </entry>
+        </registeredClasses>
+      </eventFactory>
+      <nodeFactory class="com.ericsson.becrux.base.common.data.impl.BaseComponentFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.data.Component</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>BaseComponentImpl</string>
+              <java-class>com.ericsson.becrux.base.common.data.impl.BaseComponentImpl</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.base.common.data.impl.BaseComponentImpl</java-class>
+              <string>BaseComponentImpl</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.data.Component</clazz>
+        <registeredClasses>
+          <entry>
+            <string>BaseComponentImpl</string>
+            <java-class>com.ericsson.becrux.base.common.data.impl.BaseComponentImpl</java-class>
+          </entry>
+        </registeredClasses>
+      </nodeFactory>
+      <dir class="sun.nio.fs.UnixPath">
+        <fs class="sun.nio.fs.LinuxFileSystem">
+          <provider class="sun.nio.fs.LinuxFileSystemProvider">
+            <theFileSystem class="sun.nio.fs.LinuxFileSystem" reference="../.."/>
+          </provider>
+          <defaultDirectory>L3Byb2ovaW1zX2x1L2NiYV9jZGUvaWxlc19jaQ==</defaultDirectory>
+          <needToResolveAgainstDefaultDirectory>false</needToResolveAgainstDefaultDirectory>
+          <rootDirectory>
+            <fs class="sun.nio.fs.LinuxFileSystem" reference="../.."/>
+            <path>Lw==</path>
+            <hash>0</hash>
+          </rootDirectory>
+        </fs>
+        <path>L3Byb2ovaW1zX2x1L2NiYV9jZGUvaWxlc19jaS9mZW0wMDJfODA4My90ZXN0ZGJfbmV3L2Ri</path>
+        <hash>955495493</hash>
+      </dir>
+    </dao>
+    <ilesDao class="com.ericsson.becrux.iles.dao.filedb.JsonIlesDaoImpl">
+      <eventFactory class="com.ericsson.becrux.iles.eiffel.events.IlesEventFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.eiffel.events.Event</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>BTAEvent</string>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.BTAEvent</java-class>
+            </entry>
+            <entry>
+              <string>BTFEvent</string>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.BTFEvent</java-class>
+            </entry>
+            <entry>
+              <string>ITREvent</string>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.ITREvent</java-class>
+            </entry>
+            <entry>
+              <string>LFBEvent</string>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.LFBEvent</java-class>
+            </entry>
+            <entry>
+              <string>OPBEvent</string>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.OPBEvent</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.BTAEvent</java-class>
+              <string>BTAEvent</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.BTFEvent</java-class>
+              <string>BTFEvent</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.ITREvent</java-class>
+              <string>ITREvent</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.LFBEvent</java-class>
+              <string>LFBEvent</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.eiffel.events.OPBEvent</java-class>
+              <string>OPBEvent</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.eiffel.events.Event</clazz>
+        <registeredClasses>
+          <entry>
+            <string>ITREvent</string>
+            <java-class>com.ericsson.becrux.iles.eiffel.events.ITREvent</java-class>
+          </entry>
+          <entry>
+            <string>LFBEvent</string>
+            <java-class>com.ericsson.becrux.iles.eiffel.events.LFBEvent</java-class>
+          </entry>
+          <entry>
+            <string>BTFEvent</string>
+            <java-class>com.ericsson.becrux.iles.eiffel.events.BTFEvent</java-class>
+          </entry>
+          <entry>
+            <string>OPBEvent</string>
+            <java-class>com.ericsson.becrux.iles.eiffel.events.OPBEvent</java-class>
+          </entry>
+          <entry>
+            <string>BTAEvent</string>
+            <java-class>com.ericsson.becrux.iles.eiffel.events.BTAEvent</java-class>
+          </entry>
+        </registeredClasses>
+      </eventFactory>
+      <nodeFactory class="com.ericsson.becrux.iles.data.IlesComponentFactory">
+        <runtimeTypeAdapterFactory>
+          <baseType>com.ericsson.becrux.base.common.data.Component</baseType>
+          <typeFieldName>type</typeFieldName>
+          <labelToSubtype class="linked-hash-map">
+            <entry>
+              <string>Cscf</string>
+              <java-class>com.ericsson.becrux.iles.data.Cscf</java-class>
+            </entry>
+            <entry>
+              <string>Ibcf</string>
+              <java-class>com.ericsson.becrux.iles.data.Ibcf</java-class>
+            </entry>
+            <entry>
+              <string>Int</string>
+              <java-class>com.ericsson.becrux.iles.data.Int</java-class>
+            </entry>
+            <entry>
+              <string>Mtas</string>
+              <java-class>com.ericsson.becrux.iles.data.Mtas</java-class>
+            </entry>
+            <entry>
+              <string>Pcscf</string>
+              <java-class>com.ericsson.becrux.iles.data.Pcscf</java-class>
+            </entry>
+          </labelToSubtype>
+          <subtypeToLabel class="linked-hash-map">
+            <entry>
+              <java-class>com.ericsson.becrux.iles.data.Cscf</java-class>
+              <string>Cscf</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.data.Ibcf</java-class>
+              <string>Ibcf</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.data.Int</java-class>
+              <string>Int</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.data.Mtas</java-class>
+              <string>Mtas</string>
+            </entry>
+            <entry>
+              <java-class>com.ericsson.becrux.iles.data.Pcscf</java-class>
+              <string>Pcscf</string>
+            </entry>
+          </subtypeToLabel>
+        </runtimeTypeAdapterFactory>
+        <clazz>com.ericsson.becrux.base.common.data.Component</clazz>
+        <registeredClasses>
+          <entry>
+            <string>Cscf</string>
+            <java-class>com.ericsson.becrux.iles.data.Cscf</java-class>
+          </entry>
+          <entry>
+            <string>Pcscf</string>
+            <java-class>com.ericsson.becrux.iles.data.Pcscf</java-class>
+          </entry>
+          <entry>
+            <string>Mtas</string>
+            <java-class>com.ericsson.becrux.iles.data.Mtas</java-class>
+          </entry>
+          <entry>
+            <string>Ibcf</string>
+            <java-class>com.ericsson.becrux.iles.data.Ibcf</java-class>
+          </entry>
+          <entry>
+            <string>Int</string>
+            <java-class>com.ericsson.becrux.iles.data.Int</java-class>
+          </entry>
+        </registeredClasses>
+      </nodeFactory>
+      <dir class="sun.nio.fs.UnixPath">
+        <fs class="sun.nio.fs.LinuxFileSystem" reference="../../../dao/dir/fs"/>
+        <path>L3Byb2ovaW1zX2x1L2NiYV9jZGUvaWxlc19jaS9mZW0wMDJfODA4My90ZXN0ZGJfbmV3L2Ri</path>
+        <stringValue>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/db</stringValue>
+        <hash>955495493</hash>
+      </dir>
+    </ilesDao>
+  </directory>
+</com.ericsson.becrux.iles.configuration.IlesGlobalConfig_-DescriptorImpl>

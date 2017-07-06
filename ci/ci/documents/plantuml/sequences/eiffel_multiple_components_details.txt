@@ -1,0 +1,34 @@
+@startuml
+
+skinparam sequenceParticipantBackgroundColor #FFFFFF
+skinparam sequenceArrowFontName Arial
+skinparam sequenceArrowFontSize 18 
+
+title Eiffel multiple components
+
+actor "CI Engine\ncomponent\ncie" as c
+actor "MTAS CI\ncomponent\nmtasci" as m
+actor "INT CI\ncomponent\nintci" as intci
+
+participant "message bus" as femm
+participant DB as db
+
+note over m: component must be\none word!
+note over m, femm: D=fem002.seki
+m->femm: listenOn(key: #.mtasci+D)
+
+c->femm: listenOn(key: #.D)
+
+note over m, femm: key=static+provided part+C+D
+m->femm: ITR(key: static+cie+D)
+femm->c: ITR
+
+c->femm: BTF(key: static+mtasci+D)
+femm->c: BTF
+femm->m: BTF
+
+intci->femm: listenOn(key: #.intci+D)
+intci->femm: NTA(key: static+cie+D)
+femm->c: NTA
+
+@enduml

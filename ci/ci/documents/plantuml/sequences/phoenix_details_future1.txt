@@ -1,0 +1,41 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+title MTAS installation on VISE 201 in early future
+
+actor installer as ci
+
+participant "phoenix delivery" as pho
+
+box "Phoenix\nfiles" #LightGrey
+    participant "jars" as jars
+end box
+
+participant PDB as pdb
+    ci -> pdb : download MVPL, Volte, Volte extd.
+    pdb --> jars : store
+    ci -> pho : take clean delivery
+	ci -> pho : run, pass jars as param
+	pho -> pho : load config on MTAS node
+	
+@enduml

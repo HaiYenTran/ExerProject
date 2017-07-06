@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+	This plugin contains the build steps necessary to send trigger and get feedback messages from IMS Network Feature Tests.
+</div>

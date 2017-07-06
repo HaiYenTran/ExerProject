@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>50</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>true</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>true</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.ericsson.duraci.rule.triggering.RuleTrigger plugin="eiffel-core@44.0.5">
+      <spec></spec>
+      <bindingKey>experimental.generic.*.eiffel021.seki.*</bindingKey>
+      <ruleSnippets>
+        <com.ericsson.duraci.rule.snippet.TextSnippetForRuleTrigger>
+          <rules>// For simple rules just consisting of one pattern it is sufficient with a short timeout to expire for the facts.
+// For more complex cases this must be increased, see Managing Knowledgebase in:
+// https://eiffel.lmera.ericsson.se/com.ericsson.duraci/eiffel-core/usage/rule-triggering.html
+declare EiffelMessage
+      @role( event )
+      @expires( 1m )
+end
+
+declare EiffelEvent
+      @role( event )
+      @expires( 1m )
+end
+
+rule &quot;Trigger&quot;
+    when
+        m : EiffelMessage(eventType == &quot;EiffelGenericEvent&quot;)
+    then
+        log.info(&quot;Received event &quot; + m.getEventId() + &quot;!&quot;);
+
+        // To prevent unexpected behaviour, see Accessors in:
+        // https://eiffel.lmera.ericsson.se/com.ericsson.duraci/eiffel-core/usage/rule-triggering.html
+        queue.wipe();
+        queue.unique(m);
+end</rules>
+        </com.ericsson.duraci.rule.snippet.TextSnippetForRuleTrigger>
+      </ruleSnippets>
+      <persistent>false</persistent>
+      <temporalResolution>1000</temporalResolution>
+      <keepQueue>false</keepQueue>
+      <jarFilePaths>
+        <jarFilePaths></jarFilePaths>
+      </jarFilePaths>
+    </com.ericsson.duraci.rule.triggering.RuleTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.ericsson.becrux.iles.eiffel.IlesEiffelEventReceiverBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <tag>production</tag>
+      <secondaryBindings>
+        <com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+          <bindingKey>experimental.generic.production.eiffel021.seki.fem082</bindingKey>
+          <description>ILES</description>
+        </com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+      </secondaryBindings>
+      <timeout>5000</timeout>
+      <customBindings>false</customBindings>
+    </com.ericsson.becrux.iles.eiffel.IlesEiffelEventReceiverBuildStep>
+    <com.ericsson.becrux.iles.eventhandler.strategies.AllEventStrategyRegistrationBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <poolName>pool1</poolName>
+      <workerJobName>WORKER_DUMMY</workerJobName>
+      <votingTimeout>2</votingTimeout>
+      <votingThreshold>80</votingThreshold>
+      <votingWatcherJob>VOTING_STATUS_CHECKER</votingWatcherJob>
+    </com.ericsson.becrux.iles.eventhandler.strategies.AllEventStrategyRegistrationBuildStep>
+    <com.ericsson.becrux.iles.eventhandler.IlesEventHandlerBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <maxRetries>5</maxRetries>
+      <maxTimeout>500</maxTimeout>
+      <queueName>production</queueName>
+    </com.ericsson.becrux.iles.eventhandler.IlesEventHandlerBuildStep>
+    <com.ericsson.becrux.base.common.utils.TriggerDownstreamJobBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <jobName>EIFFEL_SENDER</jobName>
+      <delay>0</delay>
+    </com.ericsson.becrux.base.common.utils.TriggerDownstreamJobBuildStep>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

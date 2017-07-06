@@ -1,0 +1,19 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="Maximum retries for event handling" >
+        <f:textbox field="maxRetries" default="5" />
+    </f:entry>
+
+    <f:entry title="Maximum timeout for each retry (in milliseconds)" >
+        <f:textbox field="maxTimeout" default="500"/>
+    </f:entry>
+
+    <f:entry title="Name of queue to save scheduled events" >
+        <f:textbox field="queueName" />
+    </f:entry>
+
+</j:jelly>

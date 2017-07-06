@@ -1,0 +1,42 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form"
+xmlns:i="jelly:fmt" xmlns:p="/lib/hudson/project">
+    <l:layout title="${it.displayName}">
+    <j:invokeStatic var="currentThread" className="java.lang.Thread" method="currentThread" />
+    <j:invoke var="buildClass" on="${currentThread.contextClassLoader}" method="loadClass">
+    <j:arg value="hudson.model.Run"/>
+    </j:invoke>
+    <j:set var="build" value="${request.findAncestorObject(buildClass)}" />
+    <st:include page="sidepanel.jelly" it="${build}" />
+        <l:main-panel>
+        <h1>${%Build} ${build.displayName}</h1>
+        <div class="container-fluid pane-frame">
+            <div class="row">
+                <div class="col-xs-24 pane-header">${%Parameters}</div>
+                    <div class="row col-xs-24 pane-content">
+                        <j:forEach var="group" items="${it.groups}">
+                            <table class="pane">
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <f:entry title="${it.name}" description="${it.description}">
+                                                <h2>${group.name}</h2>
+                                            </f:entry>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <j:forEach var="value" items="${group.values}">
+                                        <st:include it="${value}"
+                                        page="value.jelly" />
+                                    </j:forEach>
+                                </tbody>
+                            </table>
+                        </j:forEach>
+                    </div>
+                </div>
+            </div>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

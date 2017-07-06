@@ -1,0 +1,52 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+actor "INT tester" as tester
+participant "Standalone\nEngine" as cie
+
+box "SAE\nDB" #LightGrey
+    participant assignments
+    participant "nodes" as mnbl
+end box
+
+participant "VISE channel" as vise
+participant Insight as ins
+
+participant Leo as leo
+
+	tester -> cie : start the reset job\nprovide VISE channel number\nchoose MNBL
+	cie -> cie : validate input
+	cie -> cie : ICR
+	cie -> assignments : check if channel is assigned to this user
+
+	alt if channel is busy
+	cie -> cie: queue the request
+	else else
+	cie -> mnbl : get nodes data
+	cie -> cie: use binaries and cfgs 
+	cie -> vise : perform installation, config & provisioning
+	end
+	cie -> ins : push logs
+	cie -> leo : report
+	
+@enduml

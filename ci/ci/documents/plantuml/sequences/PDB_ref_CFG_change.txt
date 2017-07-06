@@ -1,0 +1,68 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Ericsson Capital TT Regular
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Ericsson Capital TT Regular
+}
+
+box "SCM team"
+    participant "jira" as testers
+end box
+
+actor "SCM team" as ng
+actor "CI Engine\nadmin" as admin
+
+box "Leo" #LightRed
+    participant Leo as leo
+end box
+
+actor "ILES\nProduction CI" as prod
+
+box "CI\nDB" #LightGrey
+    participant CFG as db
+    participant "MNBL" as mnbl
+end box
+
+participant PDB as pdb
+
+    note over mnbl : MTAS 1.0, P-CSCF 1.0\nCSCF 1.0, IBCF 1.0\nINT 1.0, CFG 1.0, PROV 1.0
+	ng -> testers : ticket
+	testers -> admin : handling 
+    admin -> prod : NCA
+    note left : Data in NCA Event:\n\tproduct: CFG\n\tbaseline: 2.0\n\tURL: config_name
+    prod -> db : Save changed CFG version state in the DB
+    note over db : CFG 2.0\nBaselineCandidate\nconfig_name
+group Standard install & test flow
+    prod -> prod: Install all nodes
+    prod -> pdb : fetch config data ("config_name")
+    prod -> prod : Configure all nodes\nProvision\nTest
+end
+    prod -> admin : NCF
+alt If voting is needed
+    prod->leo: Start voting
+    prod -> ng: Mail about voting start
+    ng->leo: vote(ok)
+    leo->prod: OPB(ok)
+end
+    prod -> db : Change CFG status
+    note over db : CFG 2.0\nApproved Baseline\nconfig_name
+    prod -> mnbl : Change MNBL version
+    note over mnbl : MTAS 1.0, P-CSCF 1.0\nCSCF 1.0, IBCF 1.0\nINT 1.0, CFG 2.0, PROV 1.0
+
+@enduml 

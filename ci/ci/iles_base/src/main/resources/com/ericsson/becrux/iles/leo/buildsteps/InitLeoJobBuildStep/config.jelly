@@ -1,0 +1,71 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="ID" >
+        <f:textbox field="id" />
+    </f:entry>
+
+    <f:entry title="CI ID" >
+        <f:textbox field="ciId" />
+    </f:entry>
+
+    <f:entry title="Loop" >
+        <f:textbox field="loop" />
+    </f:entry>
+
+    <f:entry title="Product Name" >
+        <f:textbox field="productName" />
+    </f:entry>
+
+    <f:entry title="Project Name" >
+        <f:textbox field="projectName" />
+    </f:entry>
+
+    <f:entry title="Stream Name" >
+        <f:textbox field="streamName" />
+    </f:entry>
+
+    <f:entry title="CI Stream Name" >
+        <f:textbox field="ciStreamName" />
+    </f:entry>
+
+    <f:entry title="Team Name" >
+        <f:textbox field="teamName" />
+    </f:entry>
+
+    <f:entry title="Build Location" >
+        <f:textbox field="buildLocation" />
+    </f:entry>
+
+    <f:entry title="Baseline" >
+        <f:textbox field="baseline" />
+    </f:entry>
+
+    <f:entry title="Prevision Release Baseline" >
+        <f:textbox field="prevReleaseBaseline" />
+    </f:entry>
+
+    <f:entry title="View Name" >
+        <f:textbox field="viewName" />
+    </f:entry>
+
+    <f:entry title="Node" >
+        <f:textbox field="node" />
+    </f:entry>
+
+    <f:entry title="Type" >
+        <f:textbox field="type" />
+    </f:entry>
+
+    <f:entry title="Site" >
+        <f:textbox field="site" />
+    </f:entry>
+
+    <f:entry title="Loop Type" >
+        <f:textbox field="loopType" />
+    </f:entry>
+
+</j:jelly>

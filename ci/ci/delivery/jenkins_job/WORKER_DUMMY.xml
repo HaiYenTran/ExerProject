@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>30</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty plugin="eiffel-core@44.0.5">
+      <scriptEnabled>false</scriptEnabled>
+    </com.ericsson.duraci.messaging.ImplicitMessagingContributorProperty>
+    <com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty plugin="eiffel-core@44.0.5">
+      <sequentialLinkingEnabled>false</sequentialLinkingEnabled>
+    </com.ericsson.duraci.messaging.SequentialSemanticEiffelMessageLinkingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelConfigurationNotificationMessagingJobProperty>
+    <com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty plugin="eiffel-core@44.0.5">
+      <messagingEnabled>false</messagingEnabled>
+      <jobFinishedDisabled>false</jobFinishedDisabled>
+    </com.ericsson.duraci.messaging.ImplicitEiffelMessagingJobProperty>
+    <com.ericsson.duraci.messaging.UserDomainSuffixJobProperty plugin="eiffel-core@44.0.5">
+      <enabled>false</enabled>
+      <userDomainSuffix></userDomainSuffix>
+    </com.ericsson.duraci.messaging.UserDomainSuffixJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>true</concurrentBuild>
+  <builders>
+    <com.ericsson.becrux.iles.visemanager.MultiViseManagerBuildStep__UpdateIdentifier plugin="becrux-iles@1.0-SNAPSHOT"/>
+    <com.ericsson.becrux.iles.phoenix.PhoenixSchedulerBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <delay>10</delay>
+      <timeout>0</timeout>
+      <jobName>PHOENIX_DUMMY</jobName>
+    </com.ericsson.becrux.iles.phoenix.PhoenixSchedulerBuildStep>
+    <com.ericsson.becrux.iles.provisioning.ProvisioningSchedulerBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <delay>0</delay>
+      <timeout>0</timeout>
+      <jobName>PROVISIONING_DUMMY</jobName>
+    </com.ericsson.becrux.iles.provisioning.ProvisioningSchedulerBuildStep>
+    <com.ericsson.becrux.iles.testexec.TestExecutionSchedulerBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <delay>0</delay>
+      <timeout>0</timeout>
+      <jobName>TESTEXEC_DUMMY</jobName>
+    </com.ericsson.becrux.iles.testexec.TestExecutionSchedulerBuildStep>
+  </builders>
+  <publishers>
+    <com.ericsson.becrux.iles.loop.LfbUpdaterPostBuildStep plugin="becrux-iles@1.0-SNAPSHOT">
+      <senderJob>EIFFEL_SENDER</senderJob>
+    </com.ericsson.becrux.iles.loop.LfbUpdaterPostBuildStep>
+  </publishers>
+  <buildWrappers/>
+</project>

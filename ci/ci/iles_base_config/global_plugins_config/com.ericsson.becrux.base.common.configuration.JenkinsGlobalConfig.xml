@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.ericsson.becrux.base.common.configuration.JenkinsGlobalConfig_-DescriptorImpl plugin="becrux-iles@1.0-SNAPSHOT">
+  <baseDir>/proj/ims_lu/cba_cde/iles_ci/fem002_8083/testdb_new/</baseDir>
+  <leoUrl></leoUrl>
+  <leoRoutingKey></leoRoutingKey>
+  <timeout></timeout>
+  <debugMode>false</debugMode>
+  <secondaryBindings>
+    <com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+      <bindingKey>experimental.generic.production.eiffel021.seki.fem082</bindingKey>
+      <description>ILES</description>
+    </com.ericsson.becrux.base.common.eiffel.configuration.SecondaryBinding>
+  </secondaryBindings>
+  <oldSecondaryBindings reference="../secondaryBindings"/>
+  <sslFile></sslFile>
+  <netconf>false</netconf>
+</com.ericsson.becrux.base.common.configuration.JenkinsGlobalConfig_-DescriptorImpl>

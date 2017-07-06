@@ -1,0 +1,54 @@
+@startuml
+skinparam handwritten true
+autonumber
+hide footbox
+
+skinparam sequence {
+    ArrowColor DeepSkyBlue
+    ActorBorderColor DeepSkyBlue
+    LifeLineBorderColor blue
+    LifeLineBackgroundColor #A9DCDF
+    
+    ParticipantBorderColor DeepSkyBlue
+    ParticipantBackgroundColor DodgerBlue
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #A9DCDF
+    
+    ActorBackgroundColor aqua
+    ActorFontColor DeepSkyBlue
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+title MTAS installation on VISE 201
+
+actor installer as ci
+
+participant "phoenix delivery" as pho
+
+box "Phoenix\nfiles" #LightGrey
+    participant "deploy_VNF.param" as param
+    participant "snippet*xml" as sni
+    participant "keystonerc_admin" as keystone
+    participant ss7
+end box
+
+participant "env var" as env
+
+participant PDB as pdb
+
+    ci -> pho : take clean delivery
+    ci -> param : fill in PDB and delivery info
+    ci -> sni : MTAS settings
+    ci -> keystone : controller settings
+    ci -> ss7 : provide MTAS data
+    ci -> env : set vnf_file (tar.gz location)
+    ci -> env : set vnf_name ("mtas_0103")
+
+	ci -> pho : run
+	pho -> pdb : fetch MTAS 103 config
+	pho -> pho : ...
+	pho -> pho : load config on MTAS node
+	
+@enduml

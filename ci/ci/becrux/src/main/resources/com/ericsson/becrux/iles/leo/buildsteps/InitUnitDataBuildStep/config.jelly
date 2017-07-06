@@ -1,0 +1,27 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"   xmlns:st="jelly:stapler"
+         xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson"  xmlns:f="/lib/form"
+         xmlns:i="jelly:fmt"    xmlns:p="/lib/hudson/project">
+
+    <f:entry title="Total value" >
+        <f:textbox field="total" />
+    </f:entry>
+
+    <f:entry title="Executed value" >
+        <f:textbox field="executed" />
+    </f:entry>
+
+    <f:entry title="Succeeded value" >
+        <f:textbox field="succeeded" />
+    </f:entry>
+
+    <f:entry title="Failed value" >
+        <f:textbox field="failed" />
+    </f:entry>
+
+    <f:entry title="UnitDataErrors value" >
+        <f:textbox field="unitDataErrors" />
+    </f:entry>
+
+</j:jelly>

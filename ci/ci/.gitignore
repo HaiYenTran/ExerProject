@@ -1,0 +1,6 @@
+*~
+.metadata/
+RemoteSystemsTempFiles/
+delivery/*.tgz
+becrux_config/plugins/becrux*
+delivery/tmp
